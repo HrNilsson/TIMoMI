@@ -1,0 +1,25 @@
+class System
+
+types
+-- no types currently defined
+
+instance variables
+	private Purses: map Purse`CardId to Purse;
+	inv forall x in set dom Purses & Purses(x).GetCardNo() = x;
+	
+operations
+	public Transfer: Purse`CardId * Purse`CardId * nat ==> ()
+	Transfer(fromId, toId, sum) == 
+	(
+		Purses(fromId).DecreaseBal(sum);
+		Purses(toId).IncreaseBal(sum);
+	);
+
+	public System: set of Purse ==> System
+	System(PurseSet) == 
+		Purses := {x.GetCardNo() |-> x | x in set PurseSet};
+
+functions
+-- no functions currently defined
+
+end System
