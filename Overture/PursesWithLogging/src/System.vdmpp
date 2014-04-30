@@ -1,0 +1,59 @@
+class System
+
+types
+	private Transaction :: debitedCard : Purse`CardId 
+												creditedCard : Purse`CardId 
+												sum : nat;
+
+instance variables
+	private Purses: map Purse`CardId to Purse;
+		inv forall x in set dom Purses & Purses(x).GetCardNo() = x;
+	
+	-- To ensure that no money is created after initialization the total sum of money is saved during init.
+	private TotalSum : nat;
+		inv totalSum(rng Purses) = TotalSum;
+	
+	private Log: seq of Transaction;
+	
+operations
+	public Transfer: Purse`CardId * Purse`CardId * nat ==> ()
+	Transfer(fromId, toId, sum) == 
+	(
+		Purses(fromId).DecreaseBal(sum);
+		Purses(toId).IncreaseBal(sum);
+	);
+	
+	public TotalTransferred:() ==> nat
+	TotalTransferred() ==
+		(
+			return totalTransfered(Log);
+		);
+
+	public System: set of Purse ==> System
+	System(PurseSet) == 
+	(
+		Purses := {x.GetCardNo() |-> x | x in set PurseSet};
+		TotalSum := totalSum(PurseSet);
+		Log := [];
+	);
+
+functions
+	totalTransfered : seq of Transaction -> nat
+	totalTransfered(logs) == 
+		if logs = []
+		then 0
+		else let transaction = logs(1)
+		in
+			transaction.sum + totalTransfered(tl logs);
+		--measure Card;
+		
+	totalSum : set of Purse -> nat
+	totalSum(purses) == 
+		if purses = {}
+		then 0
+		else let purse in set purses
+		in
+			purse.GetBalance() + totalSum(purses\{purse});
+		--measure Card;
+	
+end System
