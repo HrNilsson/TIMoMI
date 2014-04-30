@@ -1,0 +1,25 @@
+class Test
+
+instance variables
+	private PurseSet : set of Purse;
+	private system : System;
+	
+
+operations
+	public run : () ==> ()
+	run() ==
+		(
+			system.Transfer(1,2,100);
+			--IO`print(system.TotalTransferred());
+		);
+		
+		
+	public Test : () ==> Test
+	Test() ==
+	(
+		PurseSet := {new Purse(x,x*100)|x in set {1,...,5}};
+		system := new System(PurseSet);
+		run();
+	);
+
+end Test

@@ -23,19 +23,12 @@ operations
 	(
 		Purses(fromId).DecreaseBal(sum);
 		Purses(toId).IncreaseBal(sum);
-		Log := Log ^ [mk_Transaction(fromId,toId,sum)];
 	);
 	
 	public TotalTransferred:() ==> nat
 	TotalTransferred() ==
 		(
 			return totalTransfered(Log);
-		);
-		
-	public TotalAmount:() ==> nat
-	TotalAmount() ==
-		(
-			return TotalSum;
 		);
 
 	public System: set of Purse ==> System
@@ -58,7 +51,7 @@ functions
 			transaction.sum + totalTransfered(tl logs);
 		--measure Card;
 		
-	public totalSum : set of Purse -> nat
+	totalSum : set of Purse -> nat
 	totalSum(purses) == 
 		if purses = {}
 		then 0

@@ -14,9 +14,7 @@ operations
 
 	public DecreaseBal: nat ==> ()
 	DecreaseBal(sum) ==
-		(
 		balance := balance - sum;
-		);
 
 	public GetBalance:() ==> nat
 	GetBalance() == 

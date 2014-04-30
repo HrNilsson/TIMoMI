@@ -31,12 +31,6 @@ operations
 		(
 			return totalTransfered(Log);
 		);
-		
-	public TotalAmount:() ==> nat
-	TotalAmount() ==
-		(
-			return TotalSum;
-		);
 
 	public System: set of Purse ==> System
 	System(PurseSet) == 
@@ -58,7 +52,7 @@ functions
 			transaction.sum + totalTransfered(tl logs);
 		--measure Card;
 		
-	public totalSum : set of Purse -> nat
+	totalSum : set of Purse -> nat
 	totalSum(purses) == 
 		if purses = {}
 		then 0
