@@ -155,3 +155,13 @@ proguard/
 
 ##### Matlab #####
 .asv #Autosave files..
+
+
+##### Overture #####
+# Coverage files
+*.covtbl
+*.vdmppcov
+
+##### Modelio #####
+.runtime/
+.config/
