@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SelfServiceCashRegister" version="3">
+  <DEPS>
+    <ID name="SelfServiceCashRegister" mc="Project" uid="1da0deb3-bf21-4071-8af1-b5a94dff1cb3"/>
+    <COMPID name="SelfServiceCashRegister" mc="DiagramSet" uid="864e360b-00a2-46a7-8455-33019a9628a5"/>
+    <COMPID name="selfservicecashregister" mc="Package" uid="2d6153ce-fcd6-4cd4-9eff-9a86042c6327"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SelfServiceCashRegister" mc="Project" uid="1da0deb3-bf21-4071-8af1-b5a94dff1cb3"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[SelfServiceCashRegister]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="SelfServiceCashRegister" mc="DiagramSet" uid="864e360b-00a2-46a7-8455-33019a9628a5"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="selfservicecashregister" mc="Package" uid="2d6153ce-fcd6-4cd4-9eff-9a86042c6327"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
