@@ -1,0 +1,36 @@
+class Environment
+
+values
+	prices : seq of nat1 = [ price | price in set {1,...,100} & price mod 10 = 0];
+	weigths : seq of (nat1*nat1) = [ mk_(10*x, 20*x) | x in set elems prices];
+	names : seq of (seq of char) = ["Rugbrød","Mælk","Havregryn","Spegepølse","Tandpasta","Wc-Papir","Øl","Pasta","Oksefars","Ketchup"];
+	
+	public prods : Products = {code |-> mk_ProductInfo(prices(code),weigths(code),names(code)) 
+										| code in set {1,...,10}};
+	
+types
+	public Products = map Barcode to ProductInfo;
+	public ProductInfo:: Price : nat1
+								WeightRange : nat1 * nat1
+								Name : seq of char;
+	public Barcode = nat1;
+
+instance variables
+  scanner:BarcodeScanner;
+  screen:TouchScreen;
+  products:Products;
+
+operations
+	public Environment:() ==> Environment
+	Environment() == 
+		(
+			scanner := CR`scanner;
+			screen := CR`screen;
+		);
+		
+	public Run:() ==> Products
+	Run() ==
+		return prods;
+
+
+end Environment

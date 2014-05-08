@@ -1,0 +1,18 @@
+class World
+
+instance variables
+  public static env: Environment := new Environment();
+  
+  
+operations
+	public World:() ==> World
+	World() ==
+		env := new Environment();
+
+
+	public Run:() ==> Environment`Products
+	Run() ==
+		env.Run();
+
+
+end World

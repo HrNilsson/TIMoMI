@@ -2,17 +2,15 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="selfservicecashregister" version="3">
   <DEPS>
     <ID name="selfservicecashregister" mc="Package" uid="2d6153ce-fcd6-4cd4-9eff-9a86042c6327"/>
-    <COMPID name="BarcodeProduct" mc="Class" uid="ea4d85e9-23a6-4b09-985d-9a0b8e389bd5"/>
     <COMPID name="BarcodeScanner" mc="Class" uid="7bbdc7bb-d505-4faf-9944-2b25d9c29eef"/>
     <COMPID name="CR" mc="Class" uid="f26ea6ca-73c2-4527-8fc0-2de55d1989a7"/>
     <COMPID name="CoinAndBanknoteTerminal" mc="Class" uid="4e90d957-590e-4746-9956-5511e1971855"/>
     <COMPID name="CreditCardTerminal" mc="Class" uid="bf379853-3a66-465a-8134-9a8e74193a05"/>
     <COMPID name="Environment" mc="Class" uid="950d0f2c-61ab-4991-b588-4a0579478396"/>
-    <COMPID name="PLUProduct" mc="Class" uid="cf39fb75-d4f7-4d89-8a39-67a232886635"/>
     <COMPID name="PaymentComponent" mc="Class" uid="34fc1c4d-a4f0-4289-9a6b-75180069cc54"/>
     <COMPID name="Product" mc="Class" uid="1fdc7c39-125f-4fc4-8266-1ff208f5f8e6"/>
-    <COMPID name="Timer" mc="Class" uid="8153ebb6-5cd3-4927-a65f-ffd3835a0f8d"/>
     <COMPID name="TouchScreen" mc="Class" uid="429187a3-f8b1-4586-9f3d-876ff284c07a"/>
+    <COMPID name="Weigth" mc="Class" uid="bab561da-dcf7-482d-a505-ed43ced10cc8"/>
     <COMPID name="World" mc="Class" uid="10c26d3e-695b-48c0-b643-ed79600c0693"/>
     <COMPID name="overview diagram" mc="ClassDiagram" uid="fa6f3867-6fd7-4b90-8aa8-6438495c8924"/>
   </DEPS>
@@ -35,13 +33,11 @@
         <COMPID name="World" mc="Class" uid="10c26d3e-695b-48c0-b643-ed79600c0693"/>
         <COMPID name="Environment" mc="Class" uid="950d0f2c-61ab-4991-b588-4a0579478396"/>
         <COMPID name="Product" mc="Class" uid="1fdc7c39-125f-4fc4-8266-1ff208f5f8e6"/>
-        <COMPID name="BarcodeProduct" mc="Class" uid="ea4d85e9-23a6-4b09-985d-9a0b8e389bd5"/>
-        <COMPID name="PLUProduct" mc="Class" uid="cf39fb75-d4f7-4d89-8a39-67a232886635"/>
         <COMPID name="PaymentComponent" mc="Class" uid="34fc1c4d-a4f0-4289-9a6b-75180069cc54"/>
         <COMPID name="CreditCardTerminal" mc="Class" uid="bf379853-3a66-465a-8134-9a8e74193a05"/>
         <COMPID name="CoinAndBanknoteTerminal" mc="Class" uid="4e90d957-590e-4746-9956-5511e1971855"/>
-        <COMPID name="Timer" mc="Class" uid="8153ebb6-5cd3-4927-a65f-ffd3835a0f8d"/>
         <COMPID name="TouchScreen" mc="Class" uid="429187a3-f8b1-4586-9f3d-876ff284c07a"/>
+        <COMPID name="Weigth" mc="Class" uid="bab561da-dcf7-482d-a505-ed43ced10cc8"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="overview diagram" mc="ClassDiagram" uid="fa6f3867-6fd7-4b90-8aa8-6438495c8924"/>

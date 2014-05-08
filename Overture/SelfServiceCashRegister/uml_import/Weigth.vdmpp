@@ -1,0 +1,25 @@
+class Weigth
+
+instance variables
+	weigth : nat;
+
+
+operations
+	public Weigth:() ==> Weigth
+	Weigth() ==
+		weigth := 0;
+		
+	public GetWeigth:() ==> nat	
+	GetWeigth() ==
+		return weigth;
+	
+	public SetWeigth:nat ==> ()	
+	SetWeigth(w) ==
+		weigth := w;
+		
+	public RemoveWeigth:nat ==> ()
+	RemoveWeigth(w) ==
+		weigth := weigth - w
+	pre weigth >= w;
+	
+end Weigth

@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Timer" version="3">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Weigth" version="3">
   <DEPS>
-    <ID name="Timer" mc="Class" uid="8153ebb6-5cd3-4927-a65f-ffd3835a0f8d"/>
+    <ID name="Weigth" mc="Class" uid="bab561da-dcf7-482d-a505-ed43ced10cc8"/>
   </DEPS>
   <OBJECT>
-    <ID name="Timer" mc="Class" uid="8153ebb6-5cd3-4927-a65f-ffd3835a0f8d"/>
+    <ID name="Weigth" mc="Class" uid="bab561da-dcf7-482d-a505-ed43ced10cc8"/>
     <PID name="selfservicecashregister" mc="Package" uid="2d6153ce-fcd6-4cd4-9eff-9a86042c6327"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -14,7 +14,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Timer]]></ATT>
+      <ATT name="Name"><![CDATA[Weigth]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>

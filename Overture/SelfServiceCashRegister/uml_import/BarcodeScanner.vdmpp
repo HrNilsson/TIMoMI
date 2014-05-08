@@ -1,0 +1,30 @@
+class BarcodeScanner
+
+instance variables
+	barcode: [nat1];
+	enabled: bool;
+	
+operations
+	public BarcodeScanner:() ==> BarcodeScanner
+	BarcodeScanner() ==
+	(
+		barcode := nil;
+		enabled := false;
+	);
+
+	public EnableScanner:bool ==> ()
+	EnableScanner(enable) ==
+		enabled := enable;
+
+	public ScanBarcode:() ==> [nat1]
+	ScanBarcode() ==
+		if not enabled then
+			return nil
+		else 
+			return barcode;
+			
+	public SetBarcode:nat1 ==> ()
+	SetBarcode(code) ==
+		barcode := code;
+		
+end BarcodeScanner

@@ -1,0 +1,18 @@
+class CashRegister
+types
+
+values
+
+instance variables
+	products: map nat1 to Product;
+	
+	operations
+		public CashRegister: (map nat1 to Product) ==> CashRegister
+		CashRegister(prods) ==
+		(
+		products := prods;
+		);
+
+
+
+end CashRegister

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>SelfServiceCashRegister</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.overture.ide.core.builder.VdmBuilder</name>
+			<arguments>
+				<dictionary>
+					<key>LANGUAGE_VERSION</key>
+					<value>classic</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.overture.ide.vdmpp.core.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/selfservicecashregister.uml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Modelio/SelfServiceCashRegister/XMI/selfservicecashregister.uml</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
