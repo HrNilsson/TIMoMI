@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Product&lt;A,B&gt;" version="3">
+  <DEPS>
+    <ID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+    <COMPID name="A" mc="Class" uid="0411dbab-4702-488e-81e7-26d7e6ee9463"/>
+    <COMPID name="B" mc="Class" uid="e8df1da9-b46e-45da-a037-f08054fc4647"/>
+    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+    <FOREIGNID name="UML2RedefinableTemplateSignature" mc="Stereotype" uid="90a0e341-5d0d-11df-a996-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+    <PID name="Composite VDM Types" mc="Package" uid="a9a1e369-88a2-4304-a7ab-003ac9b73d28"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Product<A,B>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="A,B" mc="Operation" uid="586e83f4-3f4c-4c1e-ac7a-57e6ec04220d"/>
+          <PID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[A,B]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Template">
+              <OBJECT>
+                <ID name="" mc="TemplateParameter" uid="ae56f569-0093-4d65-bd00-84d8aba1d3f7"/>
+                <PID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedParameterElement">
+                    <COMPID name="A" mc="Class" uid="0411dbab-4702-488e-81e7-26d7e6ee9463"/>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TemplateParameter" uid="a7aa8a16-d3f8-4de2-a71c-e8b5b5d5f0ba"/>
+                <PID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedParameterElement">
+                    <COMPID name="B" mc="Class" uid="e8df1da9-b46e-45da-a037-f08054fc4647"/>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="UML2RedefinableTemplateSignature" mc="Stereotype" uid="90a0e341-5d0d-11df-a996-001302895b2b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

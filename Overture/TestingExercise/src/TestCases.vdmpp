@@ -1,0 +1,107 @@
+class TestCaseAdd1 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertTrue(Functions`add(2,3)=5)
+	);
+
+end TestCaseAdd1
+
+class TestCaseAdd2 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertFalse(Functions`add(5,5)=11)
+	);
+
+end TestCaseAdd2
+
+class TestCaseReverse1 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertTrue(Functions`reversed([1,2,3,4])=[4,3,2,1])
+	);
+
+end TestCaseReverse1
+class TestCaseReverse2 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertFalse(Functions`reversed([1,2,2,4])=[4,3,2,1])
+	);
+
+end TestCaseReverse2
+
+class TestCasePower1 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertTrue(Functions`powered(2,4)=16)
+	);
+
+end TestCasePower1
+class TestCasePower2 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertFalse(Functions`powered(4,2)=8)
+	);
+
+end TestCasePower2
+
+class TestCaseOnion1 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertTrue(Functions`makeOnion([1,2,3,4])=[1,[2,[3,[4,[],4],3],2],1])
+	);
+
+end TestCaseOnion1
+class TestCaseOnion2 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertFalse(Functions`makeOnion([2,3,4,1])=[1,[2,[3,[4,[],4],3],2],1])
+	);
+
+end TestCaseOnion2
+
+class TestCaseDualOnion1 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertTrue(Functions`makeDualOnion([4,3,2,1])=[1,[2,[3,[4,[],4],3],2],1])
+	);
+
+end TestCaseDualOnion1
+class TestCaseDualOnion2 is subclass of TestCase
+
+operations
+	protected runTest : () ==>()
+	runTest()==
+	(
+		assertFalse(Functions`makeDualOnion([2,3,4,1])=[1,[2,[3,[4,[],4],3],2],1])
+	);
+
+end TestCaseDualOnion2
+
+

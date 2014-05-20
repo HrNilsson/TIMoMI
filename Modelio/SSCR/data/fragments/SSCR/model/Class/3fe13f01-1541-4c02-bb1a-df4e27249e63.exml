@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Barcode" version="3">
+  <DEPS>
+    <ID name="Barcode" mc="Class" uid="3fe13f01-1541-4c02-bb1a-df4e27249e63"/>
+    <EXTID name="nat1" mc="DataType" uid="341238f6-0807-4d29-8f0a-2cf3acd0e66e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Barcode" mc="Class" uid="3fe13f01-1541-4c02-bb1a-df4e27249e63"/>
+    <PID name="CashRegister" mc="Class" uid="43d5e17c-f7a6-4a7f-be0c-6af17cce5dae"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Barcode]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="882722c3-7606-4f8c-af15-3d7c7c884e2a"/>
+          <PID name="Barcode" mc="Class" uid="3fe13f01-1541-4c02-bb1a-df4e27249e63"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="nat1" mc="DataType" uid="341238f6-0807-4d29-8f0a-2cf3acd0e66e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

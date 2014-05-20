@@ -1,0 +1,64 @@
+class Functions
+-- Use language version = vdm10
+
+types
+	public T = nat1 | seq of T;
+
+functions
+
+	public reversed : seq of int -> seq of int
+	reversed(list) == 
+		[list(len list+1-x)|x in set inds list];
+
+	public powered : int * int -> int
+	powered(x,n) == 
+			if (n = 0) then
+				1
+			else
+				x*powered(x,n-1)
+			measure CardPower;
+
+	CardPower : nat * nat -> (nat)
+	CardPower(a,b) == b;
+
+	public makeOnion : seq of int -> seq of T
+	makeOnion(list)== 
+		if (len list = 0) then
+			[]
+		else
+			[hd list,makeOnion(tl list),hd list]
+		measure CardOnion;
+
+	CardOnion : seq of int -> nat
+	CardOnion(x) == len x;
+	
+	public makeDualOnion : seq of int -> seq of T
+	makeDualOnion(list)== 
+		makeOnion(reversed(list));
+
+	public static add : nat * nat -> nat
+	add(a,b) == a+b;
+
+operations
+
+	public Run: () ==> ()
+	Run() == 
+		let ts : TestSuite = new TestSuite(),
+		result = new TestResult()
+		in
+		(
+			--ts.addTest(new TestCaseAdd1());
+			--ts.addTest(new TestCaseAdd2());
+			ts.addTest(new TestCaseReverse1());
+			ts.addTest(new TestCaseReverse2());
+			ts.addTest(new TestCasePower1());
+			ts.addTest(new TestCasePower2());
+			ts.addTest(new TestCaseOnion1());
+			ts.addTest(new TestCaseOnion2());
+			ts.addTest(new TestCaseDualOnion1());
+			ts.addTest(new TestCaseDualOnion2());
+			ts.run(result);
+			IO`println(result.toString());
+		)
+
+end Functions

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SSCR" version="3">
+  <DEPS>
+    <ID name="SSCR" mc="DiagramSet" uid="e1291df8-c4d1-418d-8c06-8393fa5c9565"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SSCR" mc="DiagramSet" uid="e1291df8-c4d1-418d-8c06-8393fa5c9565"/>
+    <PID name="SSCR" mc="Project" uid="922387a3-3775-44e7-ae00-6e8c5671a521"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[SSCR]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

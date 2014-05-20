@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" version="3">
+  <DEPS>
+    <ID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+    <EXTID name="Barcode" mc="Class" uid="3fe13f01-1541-4c02-bb1a-df4e27249e63"/>
+    <EXTID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+    <EXTID name="ProductInfo" mc="Class" uid="70539f1b-6240-49cb-971a-871766289501"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+    <PID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Map<CashRegister::Barcode,CashRegister::ProductInfo>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="7d858a33-13c3-4032-9b7e-17b76b961b05"/>
+          <PID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="044a1363-8bf0-4724-93d3-0922dece786b"/>
+                <PID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="Barcode" mc="Class" uid="3fe13f01-1541-4c02-bb1a-df4e27249e63"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="a8e58e90-5bb7-4b43-bf82-59d863a34ee7"/>
+                      <PID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="8865da9e-e521-4c2a-b8e9-616162e431d8"/>
+                <PID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="ProductInfo" mc="Class" uid="70539f1b-6240-49cb-971a-871766289501"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="ccbe6102-0bb8-405d-bd01-184e5d059fd5"/>
+                      <PID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

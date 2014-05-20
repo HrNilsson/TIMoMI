@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_jsXC4OAfEeOrH_FeaOEEVg" name="SelfServiceCashRegister">
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsXp8OAfEeOrH_FeaOEEVg" name="IO">
+    <ownedOperation xmi:id="_jsXp8eAfEeOrH_FeaOEEVg" name="writeval" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsXp8uAfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsXp8-AfEeOrH_FeaOEEVg" name="val" type="_jsYREeAfEeOrH_FeaOEEVg"/>
+      <ownedTemplateSignature xmi:id="_jsXp9OAfEeOrH_FeaOEEVg" parameter="_jsXp9eAfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:id="_jsXp9eAfEeOrH_FeaOEEVg" default="_jsXp9uAfEeOrH_FeaOEEVg">
+          <ownedDefault xmi:type="uml:LiteralString" xmi:id="_jsXp9uAfEeOrH_FeaOEEVg" name="p"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsXp9-AfEeOrH_FeaOEEVg" name="fwriteval" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsXp-OAfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsXp-eAfEeOrH_FeaOEEVg" name="filename" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXp-uAfEeOrH_FeaOEEVg" name="val" type="_jsYREuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXp--AfEeOrH_FeaOEEVg" name="fdir" type="_jsYRDOAfEeOrH_FeaOEEVg"/>
+      <ownedTemplateSignature xmi:id="_jsXp_OAfEeOrH_FeaOEEVg" parameter="_jsXp_eAfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:id="_jsXp_eAfEeOrH_FeaOEEVg" default="_jsXp_uAfEeOrH_FeaOEEVg">
+          <ownedDefault xmi:type="uml:LiteralString" xmi:id="_jsXp_uAfEeOrH_FeaOEEVg" name="p"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsXp_-AfEeOrH_FeaOEEVg" name="freadval" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsXqAOAfEeOrH_FeaOEEVg" type="_jscid-AfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsXqAeAfEeOrH_FeaOEEVg" name="filename" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedTemplateSignature xmi:id="_jsXqAuAfEeOrH_FeaOEEVg" parameter="_jsXqA-AfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:id="_jsXqA-AfEeOrH_FeaOEEVg" default="_jsXqBOAfEeOrH_FeaOEEVg">
+          <ownedDefault xmi:type="uml:LiteralString" xmi:id="_jsXqBOAfEeOrH_FeaOEEVg" name="p"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsXqBeAfEeOrH_FeaOEEVg" name="echo" visibility="public">
+      <ownedParameter xmi:id="_jsXqBuAfEeOrH_FeaOEEVg" name="text" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXqB-AfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsXqCOAfEeOrH_FeaOEEVg" name="fecho" visibility="public">
+      <ownedParameter xmi:id="_jsXqCeAfEeOrH_FeaOEEVg" name="filename" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXqCuAfEeOrH_FeaOEEVg" name="text" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXqC-AfEeOrH_FeaOEEVg" name="fdir" type="_jscifuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsXqDOAfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRAOAfEeOrH_FeaOEEVg" name="ferror" visibility="public">
+      <ownedParameter xmi:id="_jsYRAeAfEeOrH_FeaOEEVg" type="_jscidOAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRAuAfEeOrH_FeaOEEVg" name="print" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsYRA-AfEeOrH_FeaOEEVg" name="arg" type="_jsbUbuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRBOAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRBeAfEeOrH_FeaOEEVg" name="println" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsYRBuAfEeOrH_FeaOEEVg" name="arg" type="_jsbUbuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRB-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRCOAfEeOrH_FeaOEEVg" name="printf" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsYRCeAfEeOrH_FeaOEEVg" name="format" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRCuAfEeOrH_FeaOEEVg" name="args" type="_jscigeAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRC-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsYRDOAfEeOrH_FeaOEEVg" name="filedirective">
+      <generalization xmi:id="_jsYRDeAfEeOrH_FeaOEEVg" general="_jsYRDuAfEeOrH_FeaOEEVg"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_jsYRDuAfEeOrH_FeaOEEVg" name="filedirective_appendstart__1004785595">
+      <ownedLiteral xmi:id="_jsYRD-AfEeOrH_FeaOEEVg" name="&lt;append>"/>
+      <ownedLiteral xmi:id="_jsYREOAfEeOrH_FeaOEEVg" name="&lt;start>"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsYREeAfEeOrH_FeaOEEVg" name="p"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsYREuAfEeOrH_FeaOEEVg" name="p"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsYRE-AfEeOrH_FeaOEEVg" name="p"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsYRFOAfEeOrH_FeaOEEVg" name="BarcodeScanner">
+    <ownedAttribute xmi:id="_jsYRFeAfEeOrH_FeaOEEVg" name="enabled" visibility="private" type="_jsbUbeAfEeOrH_FeaOEEVg">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsYRFuAfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsYRF-AfEeOrH_FeaOEEVg" name="BarcodeScanner" visibility="public">
+      <ownedParameter xmi:id="_jsYRGOAfEeOrH_FeaOEEVg" type="_jsYRFOAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRGeAfEeOrH_FeaOEEVg" name="Enable" visibility="public">
+      <ownedParameter xmi:id="_jsYRGuAfEeOrH_FeaOEEVg" name="enable" type="_jsbUbeAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRG-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsYRHOAfEeOrH_FeaOEEVg" name="ScanBarcode" visibility="public">
+      <ownedParameter xmi:id="_jsYRHeAfEeOrH_FeaOEEVg" name="barcode" type="_jsZfL-AfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsYRHuAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsYRH-AfEeOrH_FeaOEEVg" name="CR">
+    <ownedAttribute xmi:id="_jsY4EOAfEeOrH_FeaOEEVg" name="cashRegister" visibility="public" isStatic="true" type="_jsY4JOAfEeOrH_FeaOEEVg" association="_jscikOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4EeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4EuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4E-AfEeOrH_FeaOEEVg" value="new CashRegister()"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4FOAfEeOrH_FeaOEEVg" name="cabTerm" visibility="public" isStatic="true" type="_jsZfNuAfEeOrH_FeaOEEVg" association="_jscilOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4FeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4FuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4F-AfEeOrH_FeaOEEVg" value="new CoinAndBanknoteTerminal()"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4GOAfEeOrH_FeaOEEVg" name="ccTerm" visibility="public" isStatic="true" type="_jsaGMOAfEeOrH_FeaOEEVg" association="_jsdJg-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4GeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4GuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4G-AfEeOrH_FeaOEEVg" value="new CreditCardTerminal()"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4HOAfEeOrH_FeaOEEVg" name="scanner" visibility="public" isStatic="true" type="_jsYRFOAfEeOrH_FeaOEEVg" association="_jsdJh-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4HeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4HuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4H-AfEeOrH_FeaOEEVg" value="new BarcodeScanner()"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4IOAfEeOrH_FeaOEEVg" name="screen" visibility="public" isStatic="true" type="_jsaGTeAfEeOrH_FeaOEEVg" association="_jsdJi-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4IeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4IuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4I-AfEeOrH_FeaOEEVg" value="new TouchScreen()"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsY4JOAfEeOrH_FeaOEEVg" name="CashRegister">
+    <ownedAttribute xmi:id="_jsY4JeAfEeOrH_FeaOEEVg" name="prices" visibility="private" isStatic="true" type="_jscihOAfEeOrH_FeaOEEVg" isReadOnly="true">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4JuAfEeOrH_FeaOEEVg" value="[price | price in set {1, ... ,100} &amp; ((price mod 10) = 0)]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4J-AfEeOrH_FeaOEEVg" name="weigths" visibility="private" isStatic="true" type="_jscih-AfEeOrH_FeaOEEVg" isReadOnly="true">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4KOAfEeOrH_FeaOEEVg" value="[mk_((10 * x), (20 * x)) | x in set (elems prices)]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4KeAfEeOrH_FeaOEEVg" name="names" visibility="private" isStatic="true" type="_jsciiuAfEeOrH_FeaOEEVg" isReadOnly="true">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4KuAfEeOrH_FeaOEEVg" value="[&quot;Rugbrød&quot;, &quot;Mælk&quot;, &quot;Havregryn&quot;, &quot;Spegepølse&quot;, &quot;Tandpasta&quot;, &quot;Wc-Papir&quot;, &quot;Øl&quot;, &quot;Pasta&quot;, &quot;Oksefars&quot;, &quot;Ketchup&quot;]"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4K-AfEeOrH_FeaOEEVg" name="products" visibility="public" isStatic="true" type="_jsZfLeAfEeOrH_FeaOEEVg" isReadOnly="true" association="_jsdJj-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4LOAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4LeAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4LuAfEeOrH_FeaOEEVg" value="{code |-> mk_CashRegister`ProductInfo(prices(code), weigths(code), names(code)) | code in set {1, ... ,10}}"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4L-AfEeOrH_FeaOEEVg" name="databaseProducts" visibility="private" type="_jsZfLeAfEeOrH_FeaOEEVg" association="_jsdJk-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsY4MOAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsY4MeAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4MuAfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4M-AfEeOrH_FeaOEEVg" name="basketProducts" visibility="private" type="_jscijeAfEeOrH_FeaOEEVg">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4NOAfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsY4NeAfEeOrH_FeaOEEVg" name="totalPrice" visibility="private" type="_jsbUcOAfEeOrH_FeaOEEVg">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsY4NuAfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsY4N-AfEeOrH_FeaOEEVg" name="CashRegister" visibility="public">
+      <ownedParameter xmi:id="_jsY4OOAfEeOrH_FeaOEEVg" type="_jsY4JOAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsY4OeAfEeOrH_FeaOEEVg" name="AddProduct" visibility="public">
+      <ownedParameter xmi:id="_jsY4OuAfEeOrH_FeaOEEVg" name="bar" type="_jsZfL-AfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsY4O-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsY4POAfEeOrH_FeaOEEVg" name="EmptyBasket" visibility="public">
+      <ownedParameter xmi:id="_jsZfIOAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfIeAfEeOrH_FeaOEEVg" name="Pay" visibility="public">
+      <ownedParameter xmi:id="_jsZfIuAfEeOrH_FeaOEEVg" name="component" type="_jsaGSOAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsZfI-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfJOAfEeOrH_FeaOEEVg" name="PrintReceipt" visibility="private">
+      <ownedParameter xmi:id="_jsZfJeAfEeOrH_FeaOEEVg" name="prods" type="_jscijeAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsZfJuAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfJ-AfEeOrH_FeaOEEVg" name="TotalPrice" visibility="private" isQuery="true">
+      <ownedParameter xmi:id="_jsZfKOAfEeOrH_FeaOEEVg" type="_jsbUcOAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsZfKeAfEeOrH_FeaOEEVg" name="prods" type="_jscijeAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfKuAfEeOrH_FeaOEEVg" name="CardPrice" visibility="private" isQuery="true">
+      <ownedParameter xmi:id="_jsZfK-AfEeOrH_FeaOEEVg" type="_jsbUcOAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsZfLOAfEeOrH_FeaOEEVg" name="prods" type="_jscijeAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsZfLeAfEeOrH_FeaOEEVg" name="Products">
+      <generalization xmi:id="_jsZfLuAfEeOrH_FeaOEEVg" general="_jsb7duAfEeOrH_FeaOEEVg"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsZfL-AfEeOrH_FeaOEEVg" name="Barcode">
+      <generalization xmi:id="_jsZfMOAfEeOrH_FeaOEEVg" general="_jsbUa-AfEeOrH_FeaOEEVg"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jsZfMeAfEeOrH_FeaOEEVg" name="ProductInfo">
+      <ownedAttribute xmi:id="_jsZfMuAfEeOrH_FeaOEEVg" name="Price" type="_jsbUa-AfEeOrH_FeaOEEVg"/>
+      <ownedAttribute xmi:id="_jsZfM-AfEeOrH_FeaOEEVg" name="WeightRange" type="_jscicOAfEeOrH_FeaOEEVg"/>
+      <ownedAttribute xmi:id="_jsZfNOAfEeOrH_FeaOEEVg" name="Name" type="_jscidOAfEeOrH_FeaOEEVg"/>
+      <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_jsZfNeAfEeOrH_FeaOEEVg" name="record"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsZfNuAfEeOrH_FeaOEEVg" name="CoinAndBanknoteTerminal">
+    <generalization xmi:id="_jsZfN-AfEeOrH_FeaOEEVg" general="_jsaGSOAfEeOrH_FeaOEEVg"/>
+    <ownedAttribute xmi:id="_jsZfOOAfEeOrH_FeaOEEVg" name="balance" visibility="private" type="_jsbUcOAfEeOrH_FeaOEEVg">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsZfOeAfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsZfOuAfEeOrH_FeaOEEVg" name="CoinAndBanknoteTerminal" visibility="public">
+      <ownedParameter xmi:id="_jsZfO-AfEeOrH_FeaOEEVg" type="_jsZfNuAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfPOAfEeOrH_FeaOEEVg" name="PutInMoney" visibility="public">
+      <ownedParameter xmi:id="_jsZfPeAfEeOrH_FeaOEEVg" name="amount" type="_jsbUa-AfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsZfPuAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfP-AfEeOrH_FeaOEEVg" name="RetreiveMoney" visibility="public">
+      <ownedParameter xmi:id="_jsZfQOAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsZfQeAfEeOrH_FeaOEEVg" name="Pay" visibility="public">
+      <ownedParameter xmi:id="_jsZfQuAfEeOrH_FeaOEEVg" name="sum" type="_jsbUa-AfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsZfQ-AfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsaGMOAfEeOrH_FeaOEEVg" name="CreditCardTerminal">
+    <generalization xmi:id="_jsaGMeAfEeOrH_FeaOEEVg" general="_jsaGSOAfEeOrH_FeaOEEVg"/>
+    <ownedOperation xmi:id="_jsaGMuAfEeOrH_FeaOEEVg" name="CreditCardTerminal" visibility="public">
+      <ownedParameter xmi:id="_jsaGM-AfEeOrH_FeaOEEVg" type="_jsaGMOAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsaGNOAfEeOrH_FeaOEEVg" name="Pay" visibility="public">
+      <ownedParameter xmi:id="_jsaGNeAfEeOrH_FeaOEEVg" name="sum" type="_jsbUa-AfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsaGNuAfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsaGN-AfEeOrH_FeaOEEVg" name="Environment">
+    <ownedAttribute xmi:id="_jsaGOOAfEeOrH_FeaOEEVg" name="scanner" visibility="private" type="_jsYRFOAfEeOrH_FeaOEEVg" association="_jsdJl-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsaGOeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsaGOuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsaGO-AfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsaGPOAfEeOrH_FeaOEEVg" name="screen" visibility="private" type="_jsaGTeAfEeOrH_FeaOEEVg" association="_jsdJm-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsaGPeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsaGPuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsaGP-AfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jsaGQOAfEeOrH_FeaOEEVg" name="cabTerm" visibility="private" type="_jsZfNuAfEeOrH_FeaOEEVg" association="_jsdJn-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsaGQeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsaGQuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsaGQ-AfEeOrH_FeaOEEVg" value="(undefined)"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsaGROAfEeOrH_FeaOEEVg" name="Environment" visibility="public">
+      <ownedParameter xmi:id="_jsaGReAfEeOrH_FeaOEEVg" type="_jsaGN-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsaGRuAfEeOrH_FeaOEEVg" name="Run" visibility="public">
+      <ownedParameter xmi:id="_jsaGR-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsaGSOAfEeOrH_FeaOEEVg" name="PaymentComponent" isAbstract="true">
+    <ownedOperation xmi:id="_jsaGSeAfEeOrH_FeaOEEVg" name="PaymentComponent" visibility="public">
+      <ownedParameter xmi:id="_jsaGSuAfEeOrH_FeaOEEVg" type="_jsaGSOAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsaGS-AfEeOrH_FeaOEEVg" name="Pay" visibility="public">
+      <ownedParameter xmi:id="_jsaGTOAfEeOrH_FeaOEEVg" type="_jsbUbeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsaGTeAfEeOrH_FeaOEEVg" name="TouchScreen">
+    <ownedOperation xmi:id="_jsaGTuAfEeOrH_FeaOEEVg" name="TouchScreen" visibility="public">
+      <ownedParameter xmi:id="_jsaGT-AfEeOrH_FeaOEEVg" type="_jsaGTeAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsaGUOAfEeOrH_FeaOEEVg" name="StartPayment" visibility="public">
+      <ownedParameter xmi:id="_jsaGUeAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsaGUuAfEeOrH_FeaOEEVg" name="PayCash" visibility="public">
+      <ownedParameter xmi:id="_jsatQOAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatQeAfEeOrH_FeaOEEVg" name="PayCredit" visibility="public">
+      <ownedParameter xmi:id="_jsatQuAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsatQ-AfEeOrH_FeaOEEVg" name="World">
+    <ownedAttribute xmi:id="_jsatROAfEeOrH_FeaOEEVg" name="env" visibility="public" isStatic="true" type="_jsaGN-AfEeOrH_FeaOEEVg" association="_jsdwkOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsatReAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsatRuAfEeOrH_FeaOEEVg" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsatR-AfEeOrH_FeaOEEVg" value="new Environment()"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsatSOAfEeOrH_FeaOEEVg" name="World" visibility="public">
+      <ownedParameter xmi:id="_jsatSeAfEeOrH_FeaOEEVg" type="_jsatQ-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatSuAfEeOrH_FeaOEEVg" name="Run" visibility="public">
+      <ownedParameter xmi:id="_jsatS-AfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jsatTOAfEeOrH_FeaOEEVg" name="MATH">
+    <ownedAttribute xmi:id="_jsatTeAfEeOrH_FeaOEEVg" name="pi" visibility="public" isStatic="true" type="_jsbUceAfEeOrH_FeaOEEVg" isReadOnly="true">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jsatTuAfEeOrH_FeaOEEVg" value="3.141592653589793"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_jsatT-AfEeOrH_FeaOEEVg" name="sin" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatUOAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatUeAfEeOrH_FeaOEEVg" name="v" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatUuAfEeOrH_FeaOEEVg" name="cos" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatU-AfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatVOAfEeOrH_FeaOEEVg" name="v" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatVeAfEeOrH_FeaOEEVg" name="tan" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatVuAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatV-AfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatWOAfEeOrH_FeaOEEVg" name="cot" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatWeAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatWuAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatW-AfEeOrH_FeaOEEVg" name="asin" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatXOAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatXeAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatXuAfEeOrH_FeaOEEVg" name="acos" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatX-AfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatYOAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatYeAfEeOrH_FeaOEEVg" name="atan" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatYuAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatY-AfEeOrH_FeaOEEVg" name="v" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatZOAfEeOrH_FeaOEEVg" name="acot" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsatZeAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsatZuAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsatZ-AfEeOrH_FeaOEEVg" name="sqrt" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsataOAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsbUUOAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUUeAfEeOrH_FeaOEEVg" name="pi_f" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsbUUuAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUU-AfEeOrH_FeaOEEVg" name="srand" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsbUVOAfEeOrH_FeaOEEVg" name="a" type="_jsbUcuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsbUVeAfEeOrH_FeaOEEVg" type="_jsbUb-AfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUVuAfEeOrH_FeaOEEVg" name="rand" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsbUV-AfEeOrH_FeaOEEVg" name="a" type="_jsbUcuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsbUWOAfEeOrH_FeaOEEVg" type="_jsbUcuAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUWeAfEeOrH_FeaOEEVg" name="srand2" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_jsbUWuAfEeOrH_FeaOEEVg" name="a" type="_jsbUcuAfEeOrH_FeaOEEVg"/>
+      <ownedParameter xmi:id="_jsbUW-AfEeOrH_FeaOEEVg" type="_jsbUcuAfEeOrH_FeaOEEVg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUXOAfEeOrH_FeaOEEVg" name="exp" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsbUXeAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsbUXuAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUX-AfEeOrH_FeaOEEVg" name="ln" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsbUYOAfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsbUYeAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUYuAfEeOrH_FeaOEEVg" name="log" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsbUY-AfEeOrH_FeaOEEVg" type="_jsbUceAfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsbUZOAfEeOrH_FeaOEEVg" name="a" type="_jsbUceAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_jsbUZeAfEeOrH_FeaOEEVg" name="fac" visibility="public" isStatic="true" isQuery="true">
+      <ownedParameter xmi:id="_jsbUZuAfEeOrH_FeaOEEVg" type="_jsbUa-AfEeOrH_FeaOEEVg" direction="return"/>
+      <ownedParameter xmi:id="_jsbUZ-AfEeOrH_FeaOEEVg" name="a" type="_jsbUcOAfEeOrH_FeaOEEVg"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jsbUaOAfEeOrH_FeaOEEVg" name="Basic VDM Types">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUaeAfEeOrH_FeaOEEVg" name="&lt;append>"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUauAfEeOrH_FeaOEEVg" name="&lt;start>"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUa-AfEeOrH_FeaOEEVg" name="nat1"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUbOAfEeOrH_FeaOEEVg" name="char"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUbeAfEeOrH_FeaOEEVg" name="bool"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUbuAfEeOrH_FeaOEEVg" name="Any"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUb-AfEeOrH_FeaOEEVg" name="Void"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUcOAfEeOrH_FeaOEEVg" name="nat"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUceAfEeOrH_FeaOEEVg" name="real"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jsbUcuAfEeOrH_FeaOEEVg" name="int"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jsb7YOAfEeOrH_FeaOEEVg" name="Composite VDM Types">
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsb7YeAfEeOrH_FeaOEEVg" name="Map&lt;D,R>">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_jsb7YuAfEeOrH_FeaOEEVg" name="D,R" parameter="_jsb7Y-AfEeOrH_FeaOEEVg _jsb7ZeAfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7Y-AfEeOrH_FeaOEEVg" parameteredElement="_jsb7ZOAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7ZOAfEeOrH_FeaOEEVg" name="D" templateParameter="_jsb7Y-AfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7ZeAfEeOrH_FeaOEEVg" parameteredElement="_jsb7ZuAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7ZuAfEeOrH_FeaOEEVg" name="R" templateParameter="_jsb7ZeAfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsb7Z-AfEeOrH_FeaOEEVg" name="Product&lt;A,B>">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_jsb7aOAfEeOrH_FeaOEEVg" name="A,B" parameter="_jsb7aeAfEeOrH_FeaOEEVg _jsb7a-AfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7aeAfEeOrH_FeaOEEVg" parameteredElement="_jsb7auAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7auAfEeOrH_FeaOEEVg" name="A" templateParameter="_jsb7aeAfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7a-AfEeOrH_FeaOEEVg" parameteredElement="_jsb7bOAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7bOAfEeOrH_FeaOEEVg" name="B" templateParameter="_jsb7a-AfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsb7beAfEeOrH_FeaOEEVg" name="Seq&lt;T>">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_jsb7buAfEeOrH_FeaOEEVg" name="T" parameter="_jsb7b-AfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7b-AfEeOrH_FeaOEEVg" parameteredElement="_jsb7cOAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7cOAfEeOrH_FeaOEEVg" name="T" templateParameter="_jsb7b-AfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsb7ceAfEeOrH_FeaOEEVg" name="Optional&lt;T>">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_jsb7cuAfEeOrH_FeaOEEVg" name="T" parameter="_jsb7c-AfEeOrH_FeaOEEVg">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_jsb7c-AfEeOrH_FeaOEEVg" parameteredElement="_jsb7dOAfEeOrH_FeaOEEVg">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_jsb7dOAfEeOrH_FeaOEEVg" name="T" templateParameter="_jsb7c-AfEeOrH_FeaOEEVg"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jsb7deAfEeOrH_FeaOEEVg" name="Binding classes">
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsb7duAfEeOrH_FeaOEEVg" name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo>">
+      <templateBinding xmi:id="_jsb7d-AfEeOrH_FeaOEEVg" signature="_jsb7YuAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jsb7eOAfEeOrH_FeaOEEVg" actual="_jsZfL-AfEeOrH_FeaOEEVg" formal="_jsb7Y-AfEeOrH_FeaOEEVg"/>
+        <parameterSubstitution xmi:id="_jsb7eeAfEeOrH_FeaOEEVg" actual="_jsZfMeAfEeOrH_FeaOEEVg" formal="_jsb7ZeAfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscicOAfEeOrH_FeaOEEVg" name="Product&lt;nat1,nat1>">
+      <templateBinding xmi:id="_jsciceAfEeOrH_FeaOEEVg" signature="_jsb7aOAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscicuAfEeOrH_FeaOEEVg" actual="_jsbUa-AfEeOrH_FeaOEEVg" formal="_jsb7aeAfEeOrH_FeaOEEVg"/>
+        <parameterSubstitution xmi:id="_jscic-AfEeOrH_FeaOEEVg" actual="_jsbUa-AfEeOrH_FeaOEEVg" formal="_jsb7a-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscidOAfEeOrH_FeaOEEVg" name="Seq&lt;char>">
+      <templateBinding xmi:id="_jscideAfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jsciduAfEeOrH_FeaOEEVg" actual="_jsbUbOAfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscid-AfEeOrH_FeaOEEVg" name="Product&lt;bool,Optional&lt;p>>">
+      <templateBinding xmi:id="_jscieOAfEeOrH_FeaOEEVg" signature="_jsb7aOAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscieeAfEeOrH_FeaOEEVg" actual="_jsbUbeAfEeOrH_FeaOEEVg" formal="_jsb7aeAfEeOrH_FeaOEEVg"/>
+        <parameterSubstitution xmi:id="_jscieuAfEeOrH_FeaOEEVg" actual="_jscie-AfEeOrH_FeaOEEVg" formal="_jsb7a-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscie-AfEeOrH_FeaOEEVg" name="Optional&lt;p>">
+      <templateBinding xmi:id="_jscifOAfEeOrH_FeaOEEVg" signature="_jsb7cuAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscifeAfEeOrH_FeaOEEVg" actual="_jsYRE-AfEeOrH_FeaOEEVg" formal="_jsb7c-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscifuAfEeOrH_FeaOEEVg" name="Optional&lt;IO::filedirective>">
+      <templateBinding xmi:id="_jscif-AfEeOrH_FeaOEEVg" signature="_jsb7cuAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscigOAfEeOrH_FeaOEEVg" actual="_jsYRDOAfEeOrH_FeaOEEVg" formal="_jsb7c-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscigeAfEeOrH_FeaOEEVg" name="Seq&lt;Any>">
+      <templateBinding xmi:id="_jsciguAfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscig-AfEeOrH_FeaOEEVg" actual="_jsbUbuAfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscihOAfEeOrH_FeaOEEVg" name="Seq&lt;nat1>">
+      <templateBinding xmi:id="_jsciheAfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscihuAfEeOrH_FeaOEEVg" actual="_jsbUa-AfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscih-AfEeOrH_FeaOEEVg" name="Seq&lt;Product&lt;nat1,nat1>>">
+      <templateBinding xmi:id="_jsciiOAfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jsciieAfEeOrH_FeaOEEVg" actual="_jscicOAfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jsciiuAfEeOrH_FeaOEEVg" name="Seq&lt;Seq&lt;char>>">
+      <templateBinding xmi:id="_jscii-AfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscijOAfEeOrH_FeaOEEVg" actual="_jscidOAfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jscijeAfEeOrH_FeaOEEVg" name="Seq&lt;CashRegister::ProductInfo>">
+      <templateBinding xmi:id="_jscijuAfEeOrH_FeaOEEVg" signature="_jsb7buAfEeOrH_FeaOEEVg">
+        <parameterSubstitution xmi:id="_jscij-AfEeOrH_FeaOEEVg" actual="_jsZfMeAfEeOrH_FeaOEEVg" formal="_jsb7b-AfEeOrH_FeaOEEVg"/>
+      </templateBinding>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jscikOAfEeOrH_FeaOEEVg" memberEnd="_jsY4EOAfEeOrH_FeaOEEVg _jscikeAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jscikeAfEeOrH_FeaOEEVg" name="" type="_jsYRH-AfEeOrH_FeaOEEVg" association="_jscikOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jscikuAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jscik-AfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jscilOAfEeOrH_FeaOEEVg" memberEnd="_jsY4FOAfEeOrH_FeaOEEVg _jsdJgOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJgOAfEeOrH_FeaOEEVg" name="" type="_jsYRH-AfEeOrH_FeaOEEVg" association="_jscilOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJgeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJguAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJg-AfEeOrH_FeaOEEVg" memberEnd="_jsY4GOAfEeOrH_FeaOEEVg _jsdJhOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJhOAfEeOrH_FeaOEEVg" name="" type="_jsYRH-AfEeOrH_FeaOEEVg" association="_jsdJg-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJheAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJhuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJh-AfEeOrH_FeaOEEVg" memberEnd="_jsY4HOAfEeOrH_FeaOEEVg _jsdJiOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJiOAfEeOrH_FeaOEEVg" name="" type="_jsYRH-AfEeOrH_FeaOEEVg" association="_jsdJh-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJieAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJiuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJi-AfEeOrH_FeaOEEVg" memberEnd="_jsY4IOAfEeOrH_FeaOEEVg _jsdJjOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJjOAfEeOrH_FeaOEEVg" name="" type="_jsYRH-AfEeOrH_FeaOEEVg" association="_jsdJi-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJjeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJjuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJj-AfEeOrH_FeaOEEVg" memberEnd="_jsY4K-AfEeOrH_FeaOEEVg _jsdJkOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJkOAfEeOrH_FeaOEEVg" name="" type="_jsY4JOAfEeOrH_FeaOEEVg" association="_jsdJj-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJkeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJkuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJk-AfEeOrH_FeaOEEVg" visibility="private" memberEnd="_jsY4L-AfEeOrH_FeaOEEVg _jsdJlOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJlOAfEeOrH_FeaOEEVg" name="" type="_jsY4JOAfEeOrH_FeaOEEVg" association="_jsdJk-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJleAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJluAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJl-AfEeOrH_FeaOEEVg" visibility="private" memberEnd="_jsaGOOAfEeOrH_FeaOEEVg _jsdJmOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJmOAfEeOrH_FeaOEEVg" name="" type="_jsaGN-AfEeOrH_FeaOEEVg" association="_jsdJl-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJmeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJmuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJm-AfEeOrH_FeaOEEVg" visibility="private" memberEnd="_jsaGPOAfEeOrH_FeaOEEVg _jsdJnOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJnOAfEeOrH_FeaOEEVg" name="" type="_jsaGN-AfEeOrH_FeaOEEVg" association="_jsdJm-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJneAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJnuAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdJn-AfEeOrH_FeaOEEVg" visibility="private" memberEnd="_jsaGQOAfEeOrH_FeaOEEVg _jsdJoOAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdJoOAfEeOrH_FeaOEEVg" name="" type="_jsaGN-AfEeOrH_FeaOEEVg" association="_jsdJn-AfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdJoeAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdJouAfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jsdwkOAfEeOrH_FeaOEEVg" memberEnd="_jsatROAfEeOrH_FeaOEEVg _jsdwkeAfEeOrH_FeaOEEVg">
+    <ownedEnd xmi:id="_jsdwkeAfEeOrH_FeaOEEVg" name="" type="_jsatQ-AfEeOrH_FeaOEEVg" association="_jsdwkOAfEeOrH_FeaOEEVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jsdwkuAfEeOrH_FeaOEEVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jsdwk-AfEeOrH_FeaOEEVg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,22 @@
+class BarcodeScanner
+
+instance variables
+	enabled: bool;
+	
+operations
+	public BarcodeScanner:() ==> BarcodeScanner
+	BarcodeScanner() ==
+	(
+		enabled := false;
+	);
+
+	public Enable:bool ==> ()
+	Enable(enable) ==
+		enabled := enable;
+
+	public ScanBarcode: CashRegister`Barcode ==> ()
+	ScanBarcode(barcode) ==
+		if enabled then
+			CR`cashRegister.AddProduct(barcode);
+			
+end BarcodeScanner

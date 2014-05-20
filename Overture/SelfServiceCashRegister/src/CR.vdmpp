@@ -1,0 +1,10 @@
+class CR
+	
+instance variables
+	public static cashRegister: CashRegister := new CashRegister(); 
+  public static cabTerm: CoinAndBanknoteTerminal := new CoinAndBanknoteTerminal();
+	public static ccTerm: CreditCardTerminal := new CreditCardTerminal();
+	public static scanner: BarcodeScanner := new BarcodeScanner();
+	public static screen: TouchScreen := new TouchScreen();	
+  
+end CR

@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Seq&lt;CashRegister::ProductInfo&gt;" version="3">
+  <DEPS>
+    <ID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+    <EXTID name="ProductInfo" mc="Class" uid="70539f1b-6240-49cb-971a-871766289501"/>
+    <EXTID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+    <PID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Seq<CashRegister::ProductInfo>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="c7ef5116-f6de-4a60-8487-65230f20b64c"/>
+          <PID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="731173b9-e349-42f3-9517-743a65f0af34"/>
+                <PID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="ProductInfo" mc="Class" uid="70539f1b-6240-49cb-971a-871766289501"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="1f07080f-29bb-4bb2-b8ee-f9210a8f1e89"/>
+                      <PID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

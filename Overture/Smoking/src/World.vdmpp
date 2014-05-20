@@ -1,0 +1,41 @@
+class World
+
+instance variables
+
+table: Table := new Table();
+agent: Agent := new Agent(table);
+smokers : set of Smoker := {new Smoker("Smoker 1", <Tobacco>, table),
+                            new Smoker("Smoker 2", <Paper>, table),
+                            new Smoker("Smoker 3", <Match>, table)};
+limit : nat;
+finished : bool := false;
+
+operations
+
+public World: nat ==> World
+World(simtime) ==
+  limit := simtime;
+
+Finished: () ==> nat
+Finished() ==
+  agent.GetTime();
+
+public Run: () ==> nat
+Run() ==
+  (
+   startlist(smokers);
+   start(agent);
+   start(self);
+
+   return Finished());
+
+thread
+(
+while agent.GetTime() <= limit do
+  skip; 
+  finished := true)
+
+sync
+
+per Finished => finished;
+end World

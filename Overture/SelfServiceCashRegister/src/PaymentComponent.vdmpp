@@ -1,0 +1,11 @@
+class PaymentComponent
+
+operations
+	public PaymentComponent : () ==> PaymentComponent
+	PaymentComponent() == 
+	skip;
+	
+	public Pay : nat1 ==> bool
+	Pay(-) == is subclass responsibility;
+	
+end PaymentComponent

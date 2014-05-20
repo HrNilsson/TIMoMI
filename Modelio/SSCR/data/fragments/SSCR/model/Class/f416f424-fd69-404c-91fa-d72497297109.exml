@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Map&lt;D,R&gt;" version="3">
+  <DEPS>
+    <ID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+    <COMPID name="D" mc="Class" uid="8e4bb6d2-ff65-4205-922c-c62505d3e853"/>
+    <COMPID name="R" mc="Class" uid="bcea27c4-e45f-46b5-adba-c9629dded2d7"/>
+    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+    <FOREIGNID name="UML2RedefinableTemplateSignature" mc="Stereotype" uid="90a0e341-5d0d-11df-a996-001302895b2b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+    <PID name="Composite VDM Types" mc="Package" uid="a9a1e369-88a2-4304-a7ab-003ac9b73d28"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Map<D,R>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="D,R" mc="Operation" uid="6c61b6bb-a161-470c-aedc-f45f25dd0e59"/>
+          <PID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[D,R]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Template">
+              <OBJECT>
+                <ID name="" mc="TemplateParameter" uid="a8e58e90-5bb7-4b43-bf82-59d863a34ee7"/>
+                <PID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedParameterElement">
+                    <COMPID name="D" mc="Class" uid="8e4bb6d2-ff65-4205-922c-c62505d3e853"/>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TemplateParameter" uid="ccbe6102-0bb8-405d-bd01-184e5d059fd5"/>
+                <PID name="Map&lt;D,R&gt;" mc="Class" uid="f416f424-fd69-404c-91fa-d72497297109"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedParameterElement">
+                    <COMPID name="R" mc="Class" uid="bcea27c4-e45f-46b5-adba-c9629dded2d7"/>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="UML2ClassifierTemplateParameter" mc="Stereotype" uid="4a427283-5d09-11df-a996-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="UML2RedefinableTemplateSignature" mc="Stereotype" uid="90a0e341-5d0d-11df-a996-001302895b2b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SSCR" version="3">
+  <DEPS>
+    <ID name="SSCR" mc="PropertyContainer" uid="eaa545ee-823f-4216-9979-a216c83a9778"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SSCR" mc="PropertyContainer" uid="eaa545ee-823f-4216-9979-a216c83a9778"/>
+    <PID name="SSCR" mc="AnalystProject" uid="2a171992-ae76-4801-a03f-5f08642303b7"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[SSCR]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

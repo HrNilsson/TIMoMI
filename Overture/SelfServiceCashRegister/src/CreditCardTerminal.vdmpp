@@ -1,0 +1,23 @@
+class CreditCardTerminal is subclass of PaymentComponent
+
+operations
+	public CreditCardTerminal : () ==> CreditCardTerminal
+	CreditCardTerminal() ==
+		skip;
+		
+	public Pay : nat1 ==> bool
+	Pay(sum) ==
+	--Emulate wrong pin, not enough money etc.
+		if MATH`rand(100) < 10 then 
+		(
+			IO`print("Wrong PIN or insufficient funds.\n");
+			return false;
+		) else 
+		(		
+			IO`print("Paying with credit card: ");
+			IO`print(sum);
+			IO`print(" DKK\n");
+			return true;
+		)
+
+end CreditCardTerminal

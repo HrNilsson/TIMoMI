@@ -1,0 +1,33 @@
+class Agent
+
+values
+  thing_l = [<Tobacco>, <Paper>, <Match>]
+
+instance variables
+  timer : nat := 0;
+  table : Table;
+
+operations
+
+public Agent: Table ==> Agent
+Agent(tab) ==
+  table := tab;
+
+public GetTime: () ==> nat
+GetTime() ==
+  return timer;
+
+Select2Rand: () ==> set of Table`Element
+Select2Rand() ==
+  let i = MATH`rand(20) mod 3
+  in
+    let j = (i + 1) mod 3
+    in
+      return { thing_l(i+1), thing_l(j+1)}
+
+thread
+  while true do (
+    table.AddElements(Select2Rand());
+    timer := timer + 1)
+
+end Agent

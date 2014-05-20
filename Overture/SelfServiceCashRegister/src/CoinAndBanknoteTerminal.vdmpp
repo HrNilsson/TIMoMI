@@ -1,0 +1,46 @@
+class CoinAndBanknoteTerminal is subclass of PaymentComponent
+
+instance variables
+	balance : nat;
+
+operations
+	public CoinAndBanknoteTerminal: () ==> CoinAndBanknoteTerminal
+		CoinAndBanknoteTerminal() ==
+			balance :=0;
+
+	public PutInMoney: nat1 ==> ()
+		PutInMoney(amount) ==
+			balance := balance + amount;
+
+	public RetreiveMoney: () ==> ()
+		RetreiveMoney() ==
+		(
+			IO`print("Giving back money: ");
+			IO`print(balance);
+			IO`print(" DKK\n");
+			
+			balance := 0;
+		)
+		pre balance > 0;
+		
+		
+	public Pay: nat1 ==> bool
+		Pay(sum) ==
+			let enough = sum < balance
+					 in
+				if enough then
+				(
+					IO`print("Paying with cash: ");
+					IO`print(sum);
+					IO`print(" DKK\n");
+					balance := balance - sum;
+					RetreiveMoney();
+					return true;
+				) else 
+				(		
+					IO`print("Insufficient funds");
+					return false;
+				)
+					
+
+end CoinAndBanknoteTerminal

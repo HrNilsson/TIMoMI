@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="filedirective" version="3">
+  <DEPS>
+    <ID name="filedirective" mc="Class" uid="02eb8f7b-16bc-4072-ad90-5746f7e0df14"/>
+    <EXTID name="IO" mc="Class" uid="a339101a-1791-45e8-b76d-4a474212c081"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="filedirective" mc="Class" uid="02eb8f7b-16bc-4072-ad90-5746f7e0df14"/>
+    <PID name="IO" mc="Class" uid="a339101a-1791-45e8-b76d-4a474212c081"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[filedirective]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="727ad979-ab97-4ff1-adaf-afaeb2533a93"/>
+          <PID name="filedirective" mc="Class" uid="02eb8f7b-16bc-4072-ad90-5746f7e0df14"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <REFOBJ>
+                <ID name="filedirective_appendstart__1004785595" mc="Enumeration" uid="82993924-59f1-46e6-a8d5-3d7e2f82dcc1"/>
+                <PID name="IO" mc="Class" uid="a339101a-1791-45e8-b76d-4a474212c081"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

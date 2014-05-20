@@ -1,0 +1,112 @@
+class CashRegister
+
+types
+	public Products = map Barcode to ProductInfo;
+	public ProductInfo:: 	Price : nat1
+												WeightRange : nat1 * nat1 --Not used yet
+												Name : seq of char;
+	public Barcode = nat1;
+
+values
+	prices : seq of nat1 = [ price | price in set {1,...,100} & price mod 10 = 0];
+	weigths : seq of (nat1*nat1) = [ mk_(10*x, 20*x) | x in set elems prices];
+	names : seq of (seq of char) = ["Bread","Milk","Honey","Ham","Touthpaste","Toilet paper","Beer","Pasta","Veal Beef","Ketchup"];
+	
+	public products : CashRegister`Products = {code |-> mk_CashRegister`ProductInfo(prices(code),weigths(code),names(code)) 
+										| code in set {1,...,10}};	
+	
+instance variables
+	databaseProducts: Products;
+		inv databaseProducts <> {|->} and 
+			forall x in set rng databaseProducts &
+				x.Name <> "";
+			
+	basketProducts: seq of ProductInfo;
+	totalPrice : nat;
+		inv totalPrice = TotalPrice(basketProducts); 
+	
+operations
+	public CashRegister: () ==> CashRegister
+	CashRegister() ==
+		(
+			databaseProducts := products;
+			basketProducts := [];
+			totalPrice := 0;
+		)
+		pre products <> {|->};
+
+	public AddProduct: Barcode ==> ()
+	AddProduct(bar) ==
+		(
+			if bar in set dom databaseProducts then
+			(
+				atomic
+				(
+					basketProducts := basketProducts ^ [databaseProducts(bar)];
+					totalPrice := totalPrice + databaseProducts(bar).Price;
+				);
+			)
+			else 
+			(
+				IO`print("Barcode is not valid\n");
+			)
+		);
+
+	public AddMultiple : nat1 ==> ()
+	AddMultiple(number) == 
+		let prod = basketProducts(len basketProducts) 
+			in
+		atomic
+		(
+				basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
+				totalPrice := totalPrice + prod.Price*(number-1);
+		);
+
+	public EmptyBasket: () ==> ()
+	EmptyBasket() ==
+		atomic
+		(
+			basketProducts := [];
+			totalPrice := 0;
+		);
+		
+	public Pay: (PaymentComponent) ==> ()
+	Pay(component) ==
+		(
+			if component.Pay(totalPrice) then
+			(
+				IO`print("\nPayment receipt:\n");
+				PrintReceipt(basketProducts);
+				EmptyBasket();
+			)
+		);
+		
+	PrintReceipt: seq of ProductInfo ==> ()
+	PrintReceipt(prods) ==
+		if (len prods = 0) then
+			return
+		else
+			let prod = hd prods
+				in 
+				(
+					IO`print(prod.Name);
+					IO`print(" : ");
+					IO`print(prod.Price);
+					IO`print(" DKK\n");
+					PrintReceipt(tl prods);
+				)
+			
+functions
+	TotalPrice : seq of ProductInfo -> nat
+	TotalPrice(prods) == 
+		if (len prods = 0) then
+			0
+		else
+			(hd prods).Price + TotalPrice(tl prods)
+		measure CardPrice;
+		
+	CardPrice : seq of ProductInfo -> nat
+	CardPrice(prods) ==
+		len prods;
+		
+end CashRegister

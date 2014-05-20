@@ -1,0 +1,37 @@
+class Environment
+
+instance variables
+  scanner: BarcodeScanner;
+  screen: TouchScreen;
+  cabTerm: CoinAndBanknoteTerminal;
+
+operations
+	public Environment:() ==> Environment
+	Environment() == 
+		(
+			scanner := CR`scanner;
+			screen := CR`screen;
+			cabTerm := CR`cabTerm;
+			
+		);
+		
+	public Run:() ==> ()
+	Run() ==
+	(
+		screen.StartPayment();
+		
+		scanner.ScanBarcode(2);
+		screen.AddMultiple(3);
+		
+		scanner.ScanBarcode(4);
+		scanner.ScanBarcode(5);
+		scanner.ScanBarcode(11);
+		
+		cabTerm.PutInMoney(300);
+		screen.PayCash();
+		--screen.PayCredit();
+	
+	)
+
+
+end Environment

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmi:version="20110701" xmi:id="_W3issNwmEeO-fvSf4RJpaA" name="PursesSimple">
+  <packagedElement xmi:type="uml:Class" xmi:id="_W3jTwNwmEeO-fvSf4RJpaA" name="Purse">
+    <ownedAttribute xmi:id="_W3jTwdwmEeO-fvSf4RJpaA" name="balance" visibility="private" type="_W3kh59wmEeO-fvSf4RJpaA">
+      
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W3jTw9wmEeO-fvSf4RJpaA" name="cardNo" visibility="private" type="_W3j62NwmEeO-fvSf4RJpaA" association="_W3kh6dwmEeO-fvSf4RJpaA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3jTxNwmEeO-fvSf4RJpaA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W3jTxdwmEeO-fvSf4RJpaA" value="1"/>
+      
+    </ownedAttribute>
+    <ownedOperation xmi:id="_W3jTx9wmEeO-fvSf4RJpaA" name="IncreaseBal" visibility="public">
+      <ownedParameter xmi:id="_W3jTyNwmEeO-fvSf4RJpaA" name="sum" type="_W3kh59wmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3jTydwmEeO-fvSf4RJpaA" type="_W3kh6NwmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_W3jTytwmEeO-fvSf4RJpaA" name="DecreaseBal" visibility="public">
+      <ownedParameter xmi:id="_W3jTy9wmEeO-fvSf4RJpaA" name="sum" type="_W3kh59wmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3jTzNwmEeO-fvSf4RJpaA" type="_W3kh6NwmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_W3j60NwmEeO-fvSf4RJpaA" name="GetBalance" visibility="public">
+      <ownedParameter xmi:id="_W3j60dwmEeO-fvSf4RJpaA" type="_W3kh59wmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_W3j60twmEeO-fvSf4RJpaA" name="GetCardNo" visibility="public">
+      <ownedParameter xmi:id="_W3j609wmEeO-fvSf4RJpaA" type="_W3j62NwmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_W3j61NwmEeO-fvSf4RJpaA" name="Purse" visibility="public">
+      <ownedParameter xmi:id="_W3j61dwmEeO-fvSf4RJpaA" name="newId" type="_W3j62NwmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3j61twmEeO-fvSf4RJpaA" name="startbal" type="_W3kh59wmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3j619wmEeO-fvSf4RJpaA" type="_W3jTwNwmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_W3j62NwmEeO-fvSf4RJpaA" name="CardId">
+      <generalization xmi:id="_W3j62dwmEeO-fvSf4RJpaA" general="_W3kh5twmEeO-fvSf4RJpaA"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W3j62twmEeO-fvSf4RJpaA" name="System">
+    <ownedAttribute xmi:id="_W3j629wmEeO-fvSf4RJpaA" name="Purses" visibility="private" type="_W3jTwNwmEeO-fvSf4RJpaA" isUnique="false" association="_W3lI_dwmEeO-fvSf4RJpaA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3j63NwmEeO-fvSf4RJpaA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W3j63dwmEeO-fvSf4RJpaA" value="1"/>
+      <qualifier xmi:id="_W3j63twmEeO-fvSf4RJpaA" type="_W3j62NwmEeO-fvSf4RJpaA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3j639wmEeO-fvSf4RJpaA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W3j64NwmEeO-fvSf4RJpaA" value="1"/>
+      </qualifier>
+      
+    </ownedAttribute>
+    <ownedOperation xmi:id="_W3j64twmEeO-fvSf4RJpaA" name="Transfer" visibility="public">
+      <ownedParameter xmi:id="_W3j649wmEeO-fvSf4RJpaA" name="fromId" type="_W3j62NwmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3j65NwmEeO-fvSf4RJpaA" name="toId" type="_W3j62NwmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3kh4NwmEeO-fvSf4RJpaA" name="sum" type="_W3kh59wmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3kh4dwmEeO-fvSf4RJpaA" type="_W3kh6NwmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_W3kh4twmEeO-fvSf4RJpaA" name="System" visibility="public">
+      <ownedParameter xmi:id="_W3kh49wmEeO-fvSf4RJpaA" name="PurseSet" type="_W3lI-twmEeO-fvSf4RJpaA"/>
+      <ownedParameter xmi:id="_W3kh5NwmEeO-fvSf4RJpaA" type="_W3j62twmEeO-fvSf4RJpaA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_W3kh5dwmEeO-fvSf4RJpaA" name="Basic VDM Types">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_W3kh5twmEeO-fvSf4RJpaA" name="nat1"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_W3kh59wmEeO-fvSf4RJpaA" name="nat"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_W3kh6NwmEeO-fvSf4RJpaA" name="Void"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W3kh6dwmEeO-fvSf4RJpaA" visibility="private" memberEnd="_W3jTw9wmEeO-fvSf4RJpaA _W3kh6twmEeO-fvSf4RJpaA">
+    <ownedEnd xmi:id="_W3kh6twmEeO-fvSf4RJpaA" name="" type="_W3jTwNwmEeO-fvSf4RJpaA" association="_W3kh6dwmEeO-fvSf4RJpaA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3kh69wmEeO-fvSf4RJpaA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W3kh7NwmEeO-fvSf4RJpaA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_W3kh7dwmEeO-fvSf4RJpaA" name="Composite VDM Types">
+    <packagedElement xmi:type="uml:Class" xmi:id="_W3kh7twmEeO-fvSf4RJpaA" name="Map&lt;D,R&gt;">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_W3kh79wmEeO-fvSf4RJpaA" name="D,R" parameter="_W3kh8NwmEeO-fvSf4RJpaA _W3kh8twmEeO-fvSf4RJpaA">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_W3kh8NwmEeO-fvSf4RJpaA" parameteredElement="_W3kh8dwmEeO-fvSf4RJpaA">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_W3kh8dwmEeO-fvSf4RJpaA" name="D" templateParameter="_W3kh8NwmEeO-fvSf4RJpaA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_W3kh8twmEeO-fvSf4RJpaA" parameteredElement="_W3lI8NwmEeO-fvSf4RJpaA">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_W3lI8NwmEeO-fvSf4RJpaA" name="R" templateParameter="_W3kh8twmEeO-fvSf4RJpaA"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W3lI8dwmEeO-fvSf4RJpaA" name="Set&lt;T&gt;">
+      <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_W3lI8twmEeO-fvSf4RJpaA" name="T" parameter="_W3lI89wmEeO-fvSf4RJpaA">
+        <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_W3lI89wmEeO-fvSf4RJpaA" parameteredElement="_W3lI9NwmEeO-fvSf4RJpaA">
+          <ownedParameteredElement xmi:type="uml:Class" xmi:id="_W3lI9NwmEeO-fvSf4RJpaA" name="T" templateParameter="_W3lI89wmEeO-fvSf4RJpaA"/>
+        </ownedParameter>
+      </ownedTemplateSignature>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_W3lI9dwmEeO-fvSf4RJpaA" name="Binding classes">
+    <packagedElement xmi:type="uml:Class" xmi:id="_W3lI9twmEeO-fvSf4RJpaA" name="Map&lt;Purse::CardId,Purse&gt;">
+      <templateBinding xmi:id="_W3lI99wmEeO-fvSf4RJpaA" signature="_W3kh79wmEeO-fvSf4RJpaA">
+        <parameterSubstitution xmi:id="_W3lI-NwmEeO-fvSf4RJpaA" actual="_W3j62NwmEeO-fvSf4RJpaA" formal="_W3kh8NwmEeO-fvSf4RJpaA"/>
+        <parameterSubstitution xmi:id="_W3lI-dwmEeO-fvSf4RJpaA" actual="_W3jTwNwmEeO-fvSf4RJpaA" formal="_W3kh8twmEeO-fvSf4RJpaA"/>
+      </templateBinding>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W3lI-twmEeO-fvSf4RJpaA" name="Set&lt;Purse&gt;">
+      <templateBinding xmi:id="_W3lI-9wmEeO-fvSf4RJpaA" signature="_W3lI8twmEeO-fvSf4RJpaA">
+        <parameterSubstitution xmi:id="_W3lI_NwmEeO-fvSf4RJpaA" actual="_W3jTwNwmEeO-fvSf4RJpaA" formal="_W3lI89wmEeO-fvSf4RJpaA"/>
+      </templateBinding>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W3lI_dwmEeO-fvSf4RJpaA" visibility="private" memberEnd="_W3j629wmEeO-fvSf4RJpaA _W3lI_twmEeO-fvSf4RJpaA">
+    <ownedEnd xmi:id="_W3lI_twmEeO-fvSf4RJpaA" name="" type="_W3j62twmEeO-fvSf4RJpaA" association="_W3lI_dwmEeO-fvSf4RJpaA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W3lI_9wmEeO-fvSf4RJpaA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W3lJANwmEeO-fvSf4RJpaA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

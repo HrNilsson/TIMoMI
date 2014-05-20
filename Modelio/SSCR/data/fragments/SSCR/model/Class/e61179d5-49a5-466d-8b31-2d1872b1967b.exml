@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Product&lt;bool,Optional&lt;p&gt;&gt;" version="3">
+  <DEPS>
+    <ID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+    <EXTID name="Optional&lt;p&gt;" mc="Class" uid="f35abf40-d411-42a1-bef9-17e40cf2296c"/>
+    <EXTID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+    <EXTID name="bool" mc="DataType" uid="b8bd29c9-cdaf-4827-bae0-2561dd165b9d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+    <PID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Product<bool,Optional<p>>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="64e27a1f-304f-423a-80d1-7f227a53dda4"/>
+          <PID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="5c36ddbf-d411-491b-97b2-97c627c38e6c"/>
+                <PID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="bool" mc="DataType" uid="b8bd29c9-cdaf-4827-bae0-2561dd165b9d"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="ae56f569-0093-4d65-bd00-84d8aba1d3f7"/>
+                      <PID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="56f83aa2-6760-43b5-8963-6dc898ea6bc7"/>
+                <PID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="Optional&lt;p&gt;" mc="Class" uid="f35abf40-d411-42a1-bef9-17e40cf2296c"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="a7aa8a16-d3f8-4de2-a71c-e8b5b5d5f0ba"/>
+                      <PID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Product&lt;A,B&gt;" mc="Class" uid="9a078c5b-51f2-41ab-a42f-c1f0a491a46a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

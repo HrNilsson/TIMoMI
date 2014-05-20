@@ -1,0 +1,25 @@
+class TouchScreen
+
+
+operations
+	public TouchScreen : () ==> TouchScreen
+	TouchScreen() ==
+		skip;
+
+	public StartPayment : () ==> ()
+	StartPayment() ==
+		CR`scanner.Enable(true);
+
+	public PayCash : () ==> ()
+	PayCash() ==
+		CR`cashRegister.Pay(CR`cabTerm);
+
+	public PayCredit : () ==> ()
+	PayCredit() ==
+		CR`cashRegister.Pay(CR`ccTerm);
+		
+	public AddMultiple : nat1 ==> ()
+	AddMultiple(number) == 
+		CR`cashRegister.AddMultiple(number);
+		
+end TouchScreen

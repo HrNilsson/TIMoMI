@@ -1,0 +1,54 @@
+class Table
+
+types
+
+public Element = <Tobacco> | <Paper> | <Match>;
+
+instance variables
+  elements : set of Element := {};
+  inv card elements in set {0,2};
+
+operations
+
+public AddElements: set of Element ==> ()
+AddElements(es) ==
+  elements := es;
+
+private ExtraElement: () ==> set of Element
+ExtraElement() ==
+  let es = elements
+  in (
+       elements := {};
+       return es);
+
+public TakeElements: set of Element ==> set of Element
+TakeElements(es) == (
+  let e in set es
+    in 
+      cases e:   
+        <Tobacco> -> MissingPM(),
+        <Paper> -> MissingTM(),
+        <Match> -> MissingTP()
+       end;
+    
+    ExtraElement())
+pre card es = 1;
+
+MissingPM : () ==> ()
+MissingPM() == skip;
+
+MissingTM : () ==> ()
+MissingTM() == skip;
+
+MissingTP : () ==> ()
+MissingTP() == skip;
+
+sync
+per AddElements => elements = {};
+per TakeElements => #fin(AddElements) - #fin(TakeElements) = 1;
+per MissingPM => card (elements union {<Tobaco>}) = 3;
+per MissingTM => card (elements union {<Paper>}) = 3;
+per MissingTP => card (elements union {<Match>}) = 3;
+mutex(ExtraElement); 
+
+end Table

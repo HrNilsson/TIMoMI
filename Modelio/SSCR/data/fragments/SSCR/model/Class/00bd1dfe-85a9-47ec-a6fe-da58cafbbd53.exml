@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Products" version="3">
+  <DEPS>
+    <ID name="Products" mc="Class" uid="00bd1dfe-85a9-47ec-a6fe-da58cafbbd53"/>
+    <EXTID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Products" mc="Class" uid="00bd1dfe-85a9-47ec-a6fe-da58cafbbd53"/>
+    <PID name="CashRegister" mc="Class" uid="43d5e17c-f7a6-4a7f-be0c-6af17cce5dae"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Products]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="207d7a44-c589-4d34-b2a3-317831e7ce00"/>
+          <PID name="Products" mc="Class" uid="00bd1dfe-85a9-47ec-a6fe-da58cafbbd53"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

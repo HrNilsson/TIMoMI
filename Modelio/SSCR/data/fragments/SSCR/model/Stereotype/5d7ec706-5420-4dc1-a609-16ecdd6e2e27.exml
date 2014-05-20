@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="record" version="3">
+  <DEPS>
+    <ID name="record" mc="Stereotype" uid="5d7ec706-5420-4dc1-a609-16ecdd6e2e27"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="record" mc="Stereotype" uid="5d7ec706-5420-4dc1-a609-16ecdd6e2e27"/>
+    <PID name="LocalProfile" mc="Profile" uid="c081e4d8-854e-404d-97a2-f7dbf61bdf2d"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[record]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[ModelElement]]></ATT>
+      <ATT name="Name"><![CDATA[record]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>SelfServiceCashRegister</name>
+	<name>TestingExercise</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -10,7 +10,11 @@
 			<arguments>
 				<dictionary>
 					<key>LANGUAGE_VERSION</key>
-					<value>classic</value>
+					<value>vdm10</value>
+				</dictionary>
+				<dictionary>
+					<key>SUPPRESS_WARNINGS</key>
+					<value>false</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>

@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Binding classes" version="3">
+  <DEPS>
+    <ID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <COMPID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+    <COMPID name="Optional&lt;IO::filedirective&gt;" mc="Class" uid="1c44415c-74c0-4586-bd67-53fdecf5c03b"/>
+    <COMPID name="Optional&lt;p&gt;" mc="Class" uid="f35abf40-d411-42a1-bef9-17e40cf2296c"/>
+    <COMPID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+    <COMPID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="1d3ea560-0763-4906-9bf7-badad78e4ca3"/>
+    <COMPID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+    <COMPID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+    <COMPID name="Seq&lt;Product&lt;nat1,nat1&gt;&gt;" mc="Class" uid="60efef2a-efce-4653-8650-7b9b1a608e01"/>
+    <COMPID name="Seq&lt;Seq&lt;char&gt;&gt;" mc="Class" uid="167228bf-acce-48cb-addc-e09b4a665778"/>
+    <COMPID name="Seq&lt;char&gt;" mc="Class" uid="10a1a780-2062-48e6-a8ee-b91d0b816f85"/>
+    <COMPID name="Seq&lt;nat1&gt;" mc="Class" uid="b1f0739a-a8ca-423e-bef8-dbf2c8a4df45"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <PID name="sscr" mc="Package" uid="27f0c526-ba46-4b0c-88ba-c696048ce4c1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Binding classes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Map&lt;CashRegister::Barcode,CashRegister::ProductInfo&gt;" mc="Class" uid="4b3e7f42-013e-4723-983a-70c33988fa67"/>
+        <COMPID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="1d3ea560-0763-4906-9bf7-badad78e4ca3"/>
+        <COMPID name="Seq&lt;char&gt;" mc="Class" uid="10a1a780-2062-48e6-a8ee-b91d0b816f85"/>
+        <COMPID name="Product&lt;bool,Optional&lt;p&gt;&gt;" mc="Class" uid="e61179d5-49a5-466d-8b31-2d1872b1967b"/>
+        <COMPID name="Optional&lt;p&gt;" mc="Class" uid="f35abf40-d411-42a1-bef9-17e40cf2296c"/>
+        <COMPID name="Optional&lt;IO::filedirective&gt;" mc="Class" uid="1c44415c-74c0-4586-bd67-53fdecf5c03b"/>
+        <COMPID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+        <COMPID name="Seq&lt;nat1&gt;" mc="Class" uid="b1f0739a-a8ca-423e-bef8-dbf2c8a4df45"/>
+        <COMPID name="Seq&lt;Product&lt;nat1,nat1&gt;&gt;" mc="Class" uid="60efef2a-efce-4653-8650-7b9b1a608e01"/>
+        <COMPID name="Seq&lt;Seq&lt;char&gt;&gt;" mc="Class" uid="167228bf-acce-48cb-addc-e09b4a665778"/>
+        <COMPID name="Seq&lt;CashRegister::ProductInfo&gt;" mc="Class" uid="3e45031f-f8c1-47eb-919c-16dab580b99f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

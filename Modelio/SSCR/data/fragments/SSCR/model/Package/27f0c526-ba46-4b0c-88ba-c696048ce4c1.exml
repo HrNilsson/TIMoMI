@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sscr" version="3">
+  <DEPS>
+    <ID name="sscr" mc="Package" uid="27f0c526-ba46-4b0c-88ba-c696048ce4c1"/>
+    <COMPID name="BarcodeScanner" mc="Class" uid="63c35bdd-d531-47dd-9edd-4206a02245ff"/>
+    <COMPID name="Basic VDM Types" mc="Package" uid="deaec126-fe09-454a-aba1-02b9603573a6"/>
+    <COMPID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <COMPID name="CR" mc="Class" uid="29c41e75-3be8-485e-bd1b-aafbffc4fe3f"/>
+    <COMPID name="CashRegister" mc="Class" uid="43d5e17c-f7a6-4a7f-be0c-6af17cce5dae"/>
+    <COMPID name="CoinAndBanknoteTerminal" mc="Class" uid="3dc58d37-0348-4d06-aee0-af5feb734974"/>
+    <COMPID name="Composite VDM Types" mc="Package" uid="a9a1e369-88a2-4304-a7ab-003ac9b73d28"/>
+    <COMPID name="CreditCardTerminal" mc="Class" uid="5a7906cd-c499-4f74-950f-dc85985f1b87"/>
+    <COMPID name="Environment" mc="Class" uid="cee6fc50-b7a2-4dba-8235-8e3d3176833b"/>
+    <COMPID name="IO" mc="Class" uid="a339101a-1791-45e8-b76d-4a474212c081"/>
+    <COMPID name="MATH" mc="Class" uid="ded5c932-efc0-49e4-88c4-528c491695a9"/>
+    <COMPID name="PaymentComponent" mc="Class" uid="acca6af8-39c2-465f-9963-2104792d338b"/>
+    <COMPID name="TouchScreen" mc="Class" uid="e106037b-94a4-4e73-969a-22b765c8d7c8"/>
+    <COMPID name="World" mc="Class" uid="6409bffb-a812-44ac-a9f1-d7bedec67ade"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="20cb5b3f-ec5d-475b-bf1c-7c9e7ab7a951"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="sscr" mc="Package" uid="27f0c526-ba46-4b0c-88ba-c696048ce4c1"/>
+    <PID name="SSCR" mc="Project" uid="922387a3-3775-44e7-ae00-6e8c5671a521"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sscr]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="IO" mc="Class" uid="a339101a-1791-45e8-b76d-4a474212c081"/>
+        <COMPID name="BarcodeScanner" mc="Class" uid="63c35bdd-d531-47dd-9edd-4206a02245ff"/>
+        <COMPID name="CR" mc="Class" uid="29c41e75-3be8-485e-bd1b-aafbffc4fe3f"/>
+        <COMPID name="CashRegister" mc="Class" uid="43d5e17c-f7a6-4a7f-be0c-6af17cce5dae"/>
+        <COMPID name="CoinAndBanknoteTerminal" mc="Class" uid="3dc58d37-0348-4d06-aee0-af5feb734974"/>
+        <COMPID name="CreditCardTerminal" mc="Class" uid="5a7906cd-c499-4f74-950f-dc85985f1b87"/>
+        <COMPID name="Environment" mc="Class" uid="cee6fc50-b7a2-4dba-8235-8e3d3176833b"/>
+        <COMPID name="PaymentComponent" mc="Class" uid="acca6af8-39c2-465f-9963-2104792d338b"/>
+        <COMPID name="TouchScreen" mc="Class" uid="e106037b-94a4-4e73-969a-22b765c8d7c8"/>
+        <COMPID name="World" mc="Class" uid="6409bffb-a812-44ac-a9f1-d7bedec67ade"/>
+        <COMPID name="MATH" mc="Class" uid="ded5c932-efc0-49e4-88c4-528c491695a9"/>
+        <COMPID name="Basic VDM Types" mc="Package" uid="deaec126-fe09-454a-aba1-02b9603573a6"/>
+        <COMPID name="Composite VDM Types" mc="Package" uid="a9a1e369-88a2-4304-a7ab-003ac9b73d28"/>
+        <COMPID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="20cb5b3f-ec5d-475b-bf1c-7c9e7ab7a951"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

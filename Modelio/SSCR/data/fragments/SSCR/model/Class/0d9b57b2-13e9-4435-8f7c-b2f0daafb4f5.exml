@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Seq&lt;Any&gt;" version="3">
+  <DEPS>
+    <ID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+    <EXTID name="Any" mc="DataType" uid="bd3c377e-df3b-4baf-95a7-a9c027f394ea"/>
+    <EXTID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+    <PID name="Binding classes" mc="Package" uid="9930e918-9286-4dd6-9e12-66a3bcdb9524"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Seq<Any>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="7d2ae346-d0e6-4fc4-87c3-8fc84c423e2c"/>
+          <PID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="954ed08a-87a3-49eb-8407-82d3478a9425"/>
+                <PID name="Seq&lt;Any&gt;" mc="Class" uid="0d9b57b2-13e9-4435-8f7c-b2f0daafb4f5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="Any" mc="DataType" uid="bd3c377e-df3b-4baf-95a7-a9c027f394ea"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="1f07080f-29bb-4bb2-b8ee-f9210a8f1e89"/>
+                      <PID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Seq&lt;T&gt;" mc="Class" uid="a02f0699-26bc-4569-b52f-6b387f2c37b2"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
