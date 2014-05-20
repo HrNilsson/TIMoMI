@@ -24,12 +24,21 @@ operations
 		screen.AddMultiple(3);
 		
 		scanner.ScanBarcode(4);
-		scanner.ScanBarcode(5);
+		scanner.ScanBarcode(7);
 		scanner.ScanBarcode(11);
 		
 		cabTerm.PutInMoney(300);
 		screen.PayCash();
-		--screen.PayCredit();
+		
+		
+		scanner.ScanBarcode(1);
+		scanner.ScanBarcode(5);
+		scanner.ScanBarcode(6);
+		scanner.ScanBarcode(8);
+		scanner.ScanBarcode(9);
+		scanner.ScanBarcode(10);
+		
+		screen.PayCredit();
 	
 	)
 
