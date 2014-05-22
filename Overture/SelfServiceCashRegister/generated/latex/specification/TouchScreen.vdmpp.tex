@@ -1,0 +1,72 @@
+\begin{vdmpp}
+class TouchScreen
+
+
+operations
+(*@
+\label{TouchScreen:5}
+@*)
+ public TouchScreen : () ==> TouchScreen
+ TouchScreen() ==
+  skip;
+
+(*@
+\label{StartPayment:9}
+@*)
+ public StartPayment : () ==> ()
+ StartPayment() ==
+  CR`scanner.Enable(true);
+
+(*@
+\label{PayCash:13}
+@*)
+ public PayCash : () ==> ()
+ PayCash() ==
+  CR`cashRegister.Pay(CR`cabTerm);
+
+(*@
+\label{PayCredit:17}
+@*)
+ public PayCredit : () ==> ()
+ PayCredit() ==
+  CR`cashRegister.Pay(CR`ccTerm);
+  
+(*@
+\label{AddMultiple:21}
+@*)
+ public AddMultiple : nat1 ==> ()
+ AddMultiple(number) == 
+  CR`cashRegister.AddMultiple(number);
+ 
+(*@
+\label{CancelPayment:25}
+@*)
+ public CancelPayment: () ==> ()
+ CancelPayment() == 
+  CR`cashRegister.EmptyBasket();
+  
+end TouchScreen
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[AddMultiple:21]{AddMultiple: 21} & 100.0\% & 3 \\
+\hline
+\hyperref[CancelPayment:25]{CancelPayment: 25} & 100.0\% & 1 \\
+\hline
+\hyperref[PayCash:13]{PayCash: 13} & 100.0\% & 4 \\
+\hline
+\hyperref[PayCredit:17]{PayCredit: 17} & 100.0\% & 2 \\
+\hline
+\hyperref[StartPayment:9]{StartPayment: 9} & 100.0\% & 6 \\
+\hline
+\hyperref[TouchScreen:5]{TouchScreen: 5} & 100.0\% & 2 \\
+\hline
+\hline
+TouchScreen.vdmpp & 100.0\% & 18 \\
+\hline
+\end{longtable}
+

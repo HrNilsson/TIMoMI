@@ -5,7 +5,7 @@ operations
 	PaymentComponent() == 
 	skip;
 	
-	public Pay : nat1 ==> bool
+	public Pay : nat ==> bool
 	Pay(-) == is subclass responsibility;
 	
 end PaymentComponent

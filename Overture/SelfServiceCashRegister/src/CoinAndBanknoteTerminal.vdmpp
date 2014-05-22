@@ -24,7 +24,7 @@ operations
 		pre balance > 0;
 		
 		
-	public Pay: nat1 ==> bool
+	public Pay: nat ==> bool
 		Pay(sum) ==
 			let enough = sum < balance
 					 in
@@ -38,7 +38,7 @@ operations
 					return true;
 				) else 
 				(		
-					IO`print("Insufficient funds");
+					IO`print("Insufficient funds.\n");
 					return false;
 				)
 					

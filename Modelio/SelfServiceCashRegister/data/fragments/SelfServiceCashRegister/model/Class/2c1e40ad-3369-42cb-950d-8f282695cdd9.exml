@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Product&lt;nat1,nat1&gt;" version="3">
+  <DEPS>
+    <ID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="2c1e40ad-3369-42cb-950d-8f282695cdd9"/>
+    <EXTID name="Product&lt;A,B&gt;" mc="Class" uid="82902cb7-91cd-49a3-b0ac-e5e6381a69c1"/>
+    <EXTID name="nat1" mc="DataType" uid="83f545ba-756c-46ba-ad42-e199831798cc"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="2c1e40ad-3369-42cb-950d-8f282695cdd9"/>
+    <PID name="Binding classes" mc="Package" uid="ea033fd6-0e5a-4632-96a2-a37fffb06c7e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Product<nat1,nat1>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="d8da26b3-e179-4ced-8715-ac367c4afd91"/>
+          <PID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="2c1e40ad-3369-42cb-950d-8f282695cdd9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="b8f9f8e9-6d17-45c7-b76e-630ad9197b80"/>
+                <PID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="2c1e40ad-3369-42cb-950d-8f282695cdd9"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="nat1" mc="DataType" uid="83f545ba-756c-46ba-ad42-e199831798cc"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="992b003e-565f-4267-bdd8-115b84c667da"/>
+                      <PID name="Product&lt;A,B&gt;" mc="Class" uid="82902cb7-91cd-49a3-b0ac-e5e6381a69c1"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="e6b06f96-101c-46b7-ab8d-d501f834916e"/>
+                <PID name="Product&lt;nat1,nat1&gt;" mc="Class" uid="2c1e40ad-3369-42cb-950d-8f282695cdd9"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="nat1" mc="DataType" uid="83f545ba-756c-46ba-ad42-e199831798cc"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="3e30e061-5f0f-4e36-9d84-2cd762728867"/>
+                      <PID name="Product&lt;A,B&gt;" mc="Class" uid="82902cb7-91cd-49a3-b0ac-e5e6381a69c1"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Product&lt;A,B&gt;" mc="Class" uid="82902cb7-91cd-49a3-b0ac-e5e6381a69c1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

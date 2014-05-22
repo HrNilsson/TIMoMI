@@ -1,0 +1,34 @@
+\begin{vdmpp}
+class PaymentComponent
+
+operations
+(*@
+\label{PaymentComponent:4}
+@*)
+ public PaymentComponent : () ==> PaymentComponent
+ PaymentComponent() == 
+ skip;
+ 
+(*@
+\label{Pay:8}
+@*)
+ public Pay : nat ==> bool
+ Pay(-) == is subclass responsibility;
+ 
+end PaymentComponent
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[Pay:8]{Pay: 8} & 100.0\% & 3 \\
+\hline
+\hyperref[PaymentComponent:4]{PaymentComponent: 4} & 100.0\% & 4 \\
+\hline
+\hline
+PaymentComponent.vdmpp & 100.0\% & 7 \\
+\hline
+\end{longtable}
+

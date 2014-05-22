@@ -1,0 +1,1808 @@
+	<Traces>
+	<Class Name="Environment">
+		<Trace Name="PayWithCash" TestCount="300" Filename="Environment.vdmpp" Line="60" Column="1" SUBSET="1.0" REDUCTION="NONE" SEED="999" >
+			<Test No="1">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="1" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="2">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="2" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="3">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="3" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="4">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="4" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="5">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="5" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="6">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="6" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="7">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="7" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="8">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="8" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="9">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="9" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="10">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="10" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="11">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="11" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="12">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="12" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="13">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="13" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="14">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="14" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="15">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="15" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="16">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="16" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="17">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="17" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="18">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="18" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="19">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="19" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="20">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="20" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="21">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="21" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="22">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="22" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="23">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="23" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="24">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="24" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="25">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="25" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="26">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="26" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="27">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="27" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="28">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="28" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="29">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="29" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="30">
+				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="30" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="31">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="31" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="32">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="32" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="33">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="33" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="34">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="34" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="35">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="35" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="36">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="36" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="37">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="37" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="38">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="38" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="39">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="39" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="40">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="40" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="41">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="41" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="42">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="42" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="43">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="43" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="44">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="44" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="45">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="45" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="46">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="46" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="47">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="47" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="48">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="48" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="49">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="49" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="50">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="50" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="51">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="51" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="52">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="52" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="53">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="53" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="54">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="54" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="55">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="55" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="56">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="56" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="57">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="57" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="58">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="58" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="59">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="59" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="60">
+				screen.StartPayment(); scanner.ScanBarcode(10); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="60" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="61">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="61" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="62">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="62" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="63">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="63" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="64">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="64" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="65">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="65" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="66">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="66" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="67">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="67" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="68">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="68" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="69">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="69" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="70">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="70" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="71">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="71" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="72">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="72" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="73">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="73" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="74">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="74" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="75">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="75" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="76">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="76" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="77">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="77" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="78">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="78" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="79">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="79" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="80">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="80" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="81">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="81" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="82">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="82" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="83">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="83" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="84">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="84" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="85">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="85" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="86">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="86" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="87">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="87" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="88">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="88" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="89">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="89" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="90">
+				screen.StartPayment(); scanner.ScanBarcode(2); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="90" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="91">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="91" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="92">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="92" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="93">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="93" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="94">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="94" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="95">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="95" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="96">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="96" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="97">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="97" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="98">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="98" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="99">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="99" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="100">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="100" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="101">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="101" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="102">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="102" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="103">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="103" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="104">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="104" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="105">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="105" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="106">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="106" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="107">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="107" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="108">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="108" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="109">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="109" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="110">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="110" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="111">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="111" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="112">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="112" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="113">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="113" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="114">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="114" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="115">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="115" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="116">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="116" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="117">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="117" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="118">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="118" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="119">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="119" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="120">
+				screen.StartPayment(); scanner.ScanBarcode(3); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="120" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="121">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="121" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="122">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="122" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="123">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="123" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="124">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="124" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="125">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="125" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="126">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="126" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="127">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="127" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="128">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="128" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="129">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="129" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="130">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="130" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="131">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="131" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="132">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="132" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="133">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="133" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="134">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="134" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="135">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="135" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="136">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="136" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="137">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="137" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="138">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="138" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="139">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="139" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="140">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="140" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="141">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="141" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="142">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="142" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="143">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="143" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="144">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="144" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="145">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="145" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="146">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="146" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="147">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="147" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="148">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="148" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="149">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="149" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="150">
+				screen.StartPayment(); scanner.ScanBarcode(4); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="150" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="151">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="151" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="152">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="152" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="153">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="153" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="154">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="154" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="155">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="155" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="156">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="156" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="157">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="157" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="158">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="158" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="159">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="159" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="160">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="160" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="161">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="161" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="162">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="162" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="163">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="163" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="164">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="164" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="165">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="165" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="166">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="166" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="167">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="167" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="168">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="168" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="169">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="169" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="170">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="170" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="171">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="171" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="172">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="172" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="173">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="173" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="174">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="174" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="175">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="175" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="176">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="176" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="177">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="177" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="178">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="178" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="179">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="179" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="180">
+				screen.StartPayment(); scanner.ScanBarcode(5); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="180" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="181">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="181" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="182">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="182" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="183">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="183" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="184">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="184" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="185">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="185" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="186">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="186" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="187">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="187" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="188">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="188" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="189">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="189" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="190">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="190" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="191">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="191" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="192">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="192" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="193">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="193" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="194">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="194" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="195">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="195" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="196">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="196" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="197">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="197" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="198">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="198" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="199">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="199" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="200">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="200" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="201">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="201" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="202">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="202" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="203">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="203" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="204">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="204" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="205">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="205" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="206">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="206" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="207">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="207" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="208">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="208" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="209">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="209" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="210">
+				screen.StartPayment(); scanner.ScanBarcode(6); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="210" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="211">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="211" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="212">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="212" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="213">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="213" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="214">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="214" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="215">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="215" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="216">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="216" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="217">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="217" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="218">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="218" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="219">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="219" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="220">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="220" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="221">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="221" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="222">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="222" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="223">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="223" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="224">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="224" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="225">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="225" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="226">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="226" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="227">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="227" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="228">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="228" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="229">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="229" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="230">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="230" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="231">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="231" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="232">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="232" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="233">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="233" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="234">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="234" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="235">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="235" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="236">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="236" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="237">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="237" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="238">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="238" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="239">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="239" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="240">
+				screen.StartPayment(); scanner.ScanBarcode(7); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="240" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="241">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="241" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="242">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="242" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="243">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="243" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="244">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="244" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="245">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="245" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="246">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="246" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="247">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="247" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="248">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="248" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="249">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="249" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="250">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="250" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="251">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="251" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="252">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="252" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="253">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="253" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="254">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="254" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="255">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="255" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="256">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="256" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="257">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="257" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="258">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="258" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="259">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="259" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="260">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="260" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="261">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="261" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="262">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="262" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="263">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="263" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="264">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="264" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="265">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="265" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="266">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="266" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="267">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="267" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="268">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="268" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="269">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="269" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="270">
+				screen.StartPayment(); scanner.ScanBarcode(8); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="270" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="271">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="271" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="272">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="272" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="273">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(1); scanner.ScanBarcode(1); scanner.ScanBarcode(1); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="273" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="274">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="274" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="275">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="275" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="276">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(10); scanner.ScanBarcode(10); scanner.ScanBarcode(10); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="276" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="277">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="277" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="278">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="278" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="279">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(2); scanner.ScanBarcode(2); scanner.ScanBarcode(2); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="279" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="280">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="280" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="281">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="281" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="282">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(3); scanner.ScanBarcode(3); scanner.ScanBarcode(3); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="282" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="283">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="283" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="284">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="284" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="285">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(4); scanner.ScanBarcode(4); scanner.ScanBarcode(4); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="285" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="286">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="286" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="287">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="287" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="288">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(5); scanner.ScanBarcode(5); scanner.ScanBarcode(5); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="288" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="289">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="289" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="290">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="290" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="291">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(6); scanner.ScanBarcode(6); scanner.ScanBarcode(6); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="291" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="292">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="292" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="293">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="293" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="294">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(7); scanner.ScanBarcode(7); scanner.ScanBarcode(7); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="294" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="295">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="295" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="296">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="296" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="297">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(8); scanner.ScanBarcode(8); scanner.ScanBarcode(8); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="297" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="298">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="298" Verdict="PASSED" >
+				() ; () ; () ; () ; ()
+			</Result>
+			<Test No="299">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="299" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; ()
+			</Result>
+			<Test No="300">
+				screen.StartPayment(); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); scanner.ScanBarcode(9); cabTerm.PutInMoney(500); screen.PayCash()
+			</Test>
+			<Result No="300" Verdict="PASSED" >
+				() ; () ; () ; () ; () ; () ; ()
+			</Result>
+			<Status Verdict="PASSED" TestCount="300" SkippedCount="0" FaildCount="0" InconclusiveCount="0" >
+			</Status>
+		</Trace>
+	</Class>
+</Traces>

@@ -1,0 +1,41 @@
+\begin{vdmpp}
+class World
+
+instance variables
+  public static env: Environment := new Environment();
+  
+  
+operations
+(*@
+\label{World:8}
+@*)
+ public World:() ==> World
+ World() ==
+  env := new Environment();
+
+
+(*@
+\label{Run:13}
+@*)
+ public Run:() ==> ()
+ Run() ==
+  env.Run();
+
+
+end World
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[Run:13]{Run: 13} & 100.0\% & 2 \\
+\hline
+\hyperref[World:8]{World: 8} & 100.0\% & 2 \\
+\hline
+\hline
+World.vdmpp & 100.0\% & 4 \\
+\hline
+\end{longtable}
+

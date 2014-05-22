@@ -1,0 +1,79 @@
+\begin{vdmpp}
+class CoinAndBanknoteTerminal is subclass of PaymentComponent
+
+instance variables
+ balance : nat;
+
+operations
+(*@
+\label{CoinAndBanknoteTerminal:7}
+@*)
+ public CoinAndBanknoteTerminal: () ==> CoinAndBanknoteTerminal
+  CoinAndBanknoteTerminal() ==
+   balance :=0;
+
+(*@
+\label{PutInMoney:11}
+@*)
+ public PutInMoney: nat1 ==> ()
+  PutInMoney(amount) ==
+   balance := balance + amount;
+
+(*@
+\label{RetreiveMoney:15}
+@*)
+ public RetreiveMoney: () ==> ()
+  RetreiveMoney() ==
+  (
+   IO`print("Giving back money: ");
+   IO`print(balance);
+   IO`print(" DKK\n");
+   
+   balance := 0;
+  )
+  pre balance > 0;
+  
+  
+(*@
+\label{Pay:27}
+@*)
+ public Pay: nat ==> bool
+  Pay(sum) ==
+   let enough = sum < balance
+      in
+    if enough then
+    (
+     IO`print("Paying with cash: ");
+     IO`print(sum);
+     IO`print(" DKK\n");
+     balance := balance - sum;
+     RetreiveMoney();
+     return true;
+    ) else 
+    (  
+     IO`print((*@\vdmnotcovered{"Insufficient funds.\textbackslash n"}@*));
+     return false;
+    )
+     
+
+end CoinAndBanknoteTerminal
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[CoinAndBanknoteTerminal:7]{CoinAndBanknoteTerminal: 7} & 100.0\% & 2 \\
+\hline
+\hyperref[Pay:27]{Pay: 27} & 96.0\% & 4 \\
+\hline
+\hyperref[PutInMoney:11]{PutInMoney: 11} & 100.0\% & 3 \\
+\hline
+\hyperref[RetreiveMoney:15]{RetreiveMoney: 15} & 100.0\% & 2 \\
+\hline
+\hline
+CoinAndBanknoteTerminal.vdmpp & 97.6\% & 11 \\
+\hline
+\end{longtable}
+

@@ -21,5 +21,9 @@ operations
 	public AddMultiple : nat1 ==> ()
 	AddMultiple(number) == 
 		CR`cashRegister.AddMultiple(number);
+	
+	public CancelPayment: () ==> ()
+	CancelPayment() == 
+		CR`cashRegister.EmptyBasket();
 		
 end TouchScreen

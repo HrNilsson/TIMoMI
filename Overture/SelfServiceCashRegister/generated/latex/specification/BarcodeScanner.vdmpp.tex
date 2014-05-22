@@ -1,0 +1,50 @@
+\begin{vdmpp}
+class BarcodeScanner
+
+instance variables
+ enabled: bool;
+ 
+operations
+(*@
+\label{BarcodeScanner:7}
+@*)
+ public BarcodeScanner:() ==> BarcodeScanner
+ BarcodeScanner() ==
+ (
+  enabled := false;
+ );
+
+(*@
+\label{Enable:13}
+@*)
+ public Enable:bool ==> ()
+ Enable(enable) ==
+  enabled := enable;
+
+(*@
+\label{ScanBarcode:17}
+@*)
+ public ScanBarcode: CashRegister`Barcode ==> ()
+ ScanBarcode(barcode) ==
+  if enabled then
+   CR`cashRegister.AddProduct(barcode);
+   
+end BarcodeScanner
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[BarcodeScanner:7]{BarcodeScanner: 7} & 100.0\% & 2 \\
+\hline
+\hyperref[Enable:13]{Enable: 13} & 100.0\% & 10 \\
+\hline
+\hyperref[ScanBarcode:17]{ScanBarcode: 17} & 100.0\% & 22 \\
+\hline
+\hline
+BarcodeScanner.vdmpp & 100.0\% & 34 \\
+\hline
+\end{longtable}
+

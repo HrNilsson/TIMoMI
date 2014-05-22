@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="A" version="3">
+  <DEPS>
+    <ID name="A" mc="Class" uid="4511289c-6023-4a2a-948d-960e9012c590"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="A" mc="Class" uid="4511289c-6023-4a2a-948d-960e9012c590"/>
+    <PID name="Product&lt;A,B&gt;" mc="Class" uid="82902cb7-91cd-49a3-b0ac-e5e6381a69c1"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[A]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

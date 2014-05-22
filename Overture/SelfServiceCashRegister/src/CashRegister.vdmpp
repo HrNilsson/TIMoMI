@@ -16,7 +16,7 @@ values
 										| code in set {1,...,10}};	
 	
 instance variables
-	databaseProducts: Products;
+	public databaseProducts: Products;
 		inv databaseProducts <> {|->} and 
 			forall x in set rng databaseProducts &
 				x.Name <> "";
@@ -54,13 +54,17 @@ operations
 
 	public AddMultiple : nat1 ==> ()
 	AddMultiple(number) == 
-		let prod = basketProducts(len basketProducts) 
-			in
-		atomic
-		(
-				basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
-				totalPrice := totalPrice + prod.Price*(number-1);
-		);
+		if(len basketProducts = 0) then 
+			return
+		else
+			let prod = basketProducts(len basketProducts) 
+				in		
+					atomic
+					(
+							basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
+							totalPrice := totalPrice + prod.Price*(number-1);
+					);
+	
 
 	public EmptyBasket: () ==> ()
 	EmptyBasket() ==
@@ -78,6 +82,7 @@ operations
 				IO`print("\nPayment receipt:\n");
 				PrintReceipt(basketProducts);
 				EmptyBasket();
+				CR`scanner.Enable(false);
 			)
 		);
 		
@@ -107,6 +112,6 @@ functions
 		
 	CardPrice : seq of ProductInfo -> nat
 	CardPrice(prods) ==
-		len prods;
+		len prods; 
 		
 end CashRegister

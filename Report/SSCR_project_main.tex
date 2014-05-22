@@ -1,6 +1,9 @@
 \documentclass[]{report}
 \input{home}
 \input{\home/Modules/Usepackages}
+
+\usepackage[color]{vdmlisting}
+
 \input{\home/Modules/ChapterStyle}
 \input{\home/Modules/HeaderAndFooter}
 \input{\home/Modules/Paragraph}
@@ -8,17 +11,17 @@
 
 \begin{document}
 \title{Self Service Cash Register}
-\author{Ren\'e Nilsson}
+\author{René Nilsson}
 \date{\today}
 \maketitle
-\makeHeaderAndFooter{Ren\'e Nilsson}
+\makeHeaderAndFooter{René Nilsson}
 
 \tableofcontents
 
 \input{Introduction}
 \input{Requirements}
-\input{Design}
-\input{Implementation}
+\input{ModelDescription}
+\input{Test}
 
 
 \end{document}

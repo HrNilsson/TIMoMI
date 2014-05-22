@@ -1,0 +1,50 @@
+\begin{vdmpp}
+class CreditCardTerminal is subclass of PaymentComponent
+
+operations
+(*@
+\label{CreditCardTerminal:4}
+@*)
+ public CreditCardTerminal : () ==> CreditCardTerminal
+ CreditCardTerminal() ==
+  skip;
+  
+(*@
+\label{Pay:8}
+@*)
+ public Pay : nat ==> bool
+ Pay(sum) ==
+ (
+  if(sum = 0) then
+   (*@\vdmnotcovered{return}@*) (*@\vdmnotcovered{true}@*); -- Nothing to pay
+   
+ --Emulate wrong pin, not enough money etc.
+  if MATH`rand(100) < 10 then 
+  (*@\vdmnotcovered{(}@*)
+   (*@\vdmnotcovered{IO`print}@*)((*@\vdmnotcovered{"Wrong PIN or insufficient funds.\textbackslash n"}@*));
+   (*@\vdmnotcovered{return}@*) (*@\vdmnotcovered{false}@*);
+  ) else 
+  (  
+   IO`print("Paying with credit card: ");
+   IO`print(sum);
+   IO`print(" DKK\n");
+   return true;
+  )
+ );
+end CreditCardTerminal
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[CreditCardTerminal:4]{CreditCardTerminal: 4} & 100.0\% & 2 \\
+\hline
+\hyperref[Pay:8]{Pay: 8} & 73.0\% & 2 \\
+\hline
+\hline
+CreditCardTerminal.vdmpp & 74.0\% & 4 \\
+\hline
+\end{longtable}
+

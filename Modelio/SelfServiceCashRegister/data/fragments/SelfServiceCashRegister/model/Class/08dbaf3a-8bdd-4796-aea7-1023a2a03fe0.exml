@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Seq&lt;nat1&gt;" version="3">
+  <DEPS>
+    <ID name="Seq&lt;nat1&gt;" mc="Class" uid="08dbaf3a-8bdd-4796-aea7-1023a2a03fe0"/>
+    <EXTID name="Seq&lt;T&gt;" mc="Class" uid="7ab2c8a1-6ad6-439b-b6c7-2e928c526b04"/>
+    <EXTID name="nat1" mc="DataType" uid="83f545ba-756c-46ba-ad42-e199831798cc"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Seq&lt;nat1&gt;" mc="Class" uid="08dbaf3a-8bdd-4796-aea7-1023a2a03fe0"/>
+    <PID name="Binding classes" mc="Package" uid="ea033fd6-0e5a-4632-96a2-a37fffb06c7e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Seq<nat1>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="" mc="TemplateBinding" uid="13547940-2593-4e41-9386-9517e3f5f163"/>
+          <PID name="Seq&lt;nat1&gt;" mc="Class" uid="08dbaf3a-8bdd-4796-aea7-1023a2a03fe0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="" mc="TemplateParameterSubstitution" uid="a4aeb694-a09d-4874-9d1e-e2b4a1ab81dc"/>
+                <PID name="Seq&lt;nat1&gt;" mc="Class" uid="08dbaf3a-8bdd-4796-aea7-1023a2a03fe0"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="nat1" mc="DataType" uid="83f545ba-756c-46ba-ad42-e199831798cc"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="" mc="TemplateParameter" uid="2876dbbb-3703-41bc-a6e4-8f7444b8a3c3"/>
+                      <PID name="Seq&lt;T&gt;" mc="Class" uid="7ab2c8a1-6ad6-439b-b6c7-2e928c526b04"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="Seq&lt;T&gt;" mc="Class" uid="7ab2c8a1-6ad6-439b-b6c7-2e928c526b04"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,170 @@
+\begin{vdmpp}
+class CashRegister
+
+types
+ public Products = map Barcode to ProductInfo;
+ public ProductInfo::  Price : nat1
+            WeightRange : nat1 * nat1 --Not used yet
+            Name : seq of char;
+ public Barcode = nat1;
+
+values
+ prices : seq of nat1 = [ price | price in set {1,...,100} & price mod 10 = 0];
+ weigths : seq of (nat1*nat1) = [ mk_(10*x, 20*x) | x in set elems prices];
+ names : seq of (seq of char) = ["Bread","Milk","Honey","Ham","Touthpaste","Toilet paper","Beer","Pasta","Veal Beef","Ketchup"];
+ 
+ public products : CashRegister`Products = {code |-> mk_CashRegister`ProductInfo(prices(code),weigths(code),names(code)) 
+          | code in set {1,...,10}}; 
+ 
+instance variables
+ public databaseProducts: Products;
+  inv databaseProducts <> {|->} and 
+   forall x in set rng databaseProducts &
+    x.Name <> "";
+   
+ basketProducts: seq of ProductInfo;
+ totalPrice : nat;
+  inv totalPrice = TotalPrice(basketProducts); 
+ 
+operations
+(*@
+\label{CashRegister:29}
+@*)
+ public CashRegister: () ==> CashRegister
+ CashRegister() ==
+  (
+   databaseProducts := products;
+   basketProducts := [];
+   totalPrice := 0;
+  )
+  pre products <> {|->};
+
+(*@
+\label{AddProduct:38}
+@*)
+ public AddProduct: Barcode ==> ()
+ AddProduct(bar) ==
+  (
+   if bar in set dom databaseProducts then
+   (
+    atomic
+    (
+     basketProducts := basketProducts ^ [databaseProducts(bar)];
+     totalPrice := totalPrice + databaseProducts(bar).Price;
+    );
+   )
+   else 
+   (
+    IO`print("Barcode is not valid\n");
+   )
+  );
+
+(*@
+\label{AddMultiple:55}
+@*)
+ public AddMultiple : nat1 ==> ()
+ AddMultiple(number) == 
+  if(len basketProducts = 0) then 
+   return
+  else
+   let prod = basketProducts(len basketProducts) 
+    in  
+     atomic
+     (
+       basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
+(*@
+\label{EmptyBasket:65}
+@*)
+       totalPrice := totalPrice + prod.Price*(number-1);
+     );
+ 
+
+ public EmptyBasket: () ==> ()
+ EmptyBasket() ==
+  atomic
+  (
+(*@
+\label{Pay:73}
+@*)
+   basketProducts := [];
+   totalPrice := 0;
+  );
+  
+ public Pay: (PaymentComponent) ==> ()
+ Pay(component) ==
+  (
+   if component.Pay(totalPrice) then
+   (
+    IO`print("\nPayment receipt:\n");
+    PrintReceipt(basketProducts);
+(*@
+\label{PrintReceipt:84}
+@*)
+    EmptyBasket();
+    CR`scanner.Enable(false);
+   )
+  );
+  
+ PrintReceipt: seq of ProductInfo ==> ()
+ PrintReceipt(prods) ==
+  if (len prods = 0) then
+   return
+  else
+   let prod = hd prods
+    in 
+    (
+     IO`print(prod.Name);
+     IO`print(" : ");
+     IO`print(prod.Price);
+(*@
+\label{TotalPrice:100}
+@*)
+     IO`print(" DKK\n");
+     PrintReceipt(tl prods);
+    )
+   
+functions
+ TotalPrice : seq of ProductInfo -> nat
+ TotalPrice(prods) == 
+  if (len prods = 0) then
+(*@
+\label{CardPrice:108}
+@*)
+   0
+  else
+   (hd prods).Price + TotalPrice(tl prods)
+  measure CardPrice;
+  
+ CardPrice : seq of ProductInfo -> nat
+ CardPrice(prods) ==
+  len prods; 
+  
+end CashRegister
+\end{vdmpp}
+\bigskip
+\begin{longtable}{|l|r|r|}
+\hline
+Function or operation & Coverage & Calls \\
+\hline
+\hline
+\hyperref[AddMultiple:55]{AddMultiple: 55} & 100.0\% & 3 \\
+\hline
+\hyperref[AddProduct:38]{AddProduct: 38} & 100.0\% & 22 \\
+\hline
+\hyperref[CardPrice:108]{CardPrice: 108} & 100.0\% & 198 \\
+\hline
+\hyperref[CashRegister:29]{CashRegister: 29} & 100.0\% & 2 \\
+\hline
+\hyperref[EmptyBasket:65]{EmptyBasket: 65} & 100.0\% & 5 \\
+\hline
+\hyperref[Pay:73]{Pay: 73} & 100.0\% & 6 \\
+\hline
+\hyperref[PrintReceipt:84]{PrintReceipt: 84} & 100.0\% & 26 \\
+\hline
+\hyperref[TotalPrice:100]{TotalPrice: 100} & 100.0\% & 198 \\
+\hline
+\hline
+CashRegister.vdmpp & 100.0\% & 460 \\
+\hline
+\end{longtable}
+

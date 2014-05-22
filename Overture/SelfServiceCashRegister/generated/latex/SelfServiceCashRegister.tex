@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage[color]{vdmlisting}
+\usepackage[hidelinks]{hyperref} 
+\usepackage{longtable}
+%JPNFONT\usepackage{fontspec}
+%JPNFONT\setmainfont{Times New Roman}
+%JPNFONT\setmonofont[Scale=0.85]{Courier New}
+%JPNFONT\newfontfamily\jmsm[Scale=0.92]{MS Mincho}
+%JPNFONT\newfontfamily\jmsg[Scale=0.92]{MS Gothic}
+% for windows
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setmonofont[Scale=0.85]{Courier New}
+\newfontfamily\jmsm[Scale=0.92]{MS Mincho}
+\newfontfamily\jmsg[Scale=0.92]{MS Gothic}
+\begin{document}
+\title{SelfServiceCashRegister}
+\author{}
+\maketitle
+\tableofcontents
+
+\section{BarcodeScanner}
+\input{specification/BarcodeScanner.vdmpp.tex}
+\section{CR}
+\input{specification/CR.vdmpp.tex}
+\section{CashRegister}
+\input{specification/CashRegister.vdmpp.tex}
+\section{CoinAndBanknoteTerminal}
+\input{specification/CoinAndBanknoteTerminal.vdmpp.tex}
+\section{CreditCardTerminal}
+\input{specification/CreditCardTerminal.vdmpp.tex}
+\section{Environment}
+\input{specification/Environment.vdmpp.tex}
+\section{PaymentComponent}
+\input{specification/PaymentComponent.vdmpp.tex}
+\section{TouchScreen}
+\input{specification/TouchScreen.vdmpp.tex}
+\section{World}
+\input{specification/World.vdmpp.tex}
+
+\end{document}
