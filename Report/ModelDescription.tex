@@ -7,7 +7,7 @@ In Figure \ref{fig:SimpleClassDiagram} the final class diagram is shown.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\linewidth]{SimpleClassDiagram}
+\includegraphics[width=0.8\linewidth]{ClassDiagram}
 \caption{Final class diagram.}
 \label{fig:SimpleClassDiagram}
 \end{figure}
@@ -17,6 +17,8 @@ The World and Environment classes are used to create stimuli to the system.
 
 The CashRegister class contains most of the functionality. It is also this class that contains a database of all products and corresponding barcodes. 
 It also contains a list of items in the 'shopping cart' and the accumulated price for the scanned products.
+
+All classes will be described in the following section.
 
 \newpage
 \section{Class descriptions}
@@ -142,12 +144,12 @@ Values are constant declarations, which are used here to populate the instance v
 \begin{vdmpp}
 values
  prices : seq of nat1 = [ price | price in set {1,...,100} & price mod 10 = 0];
- weigths : seq of (nat1*nat1) = [ mk_(10*x, 20*x) | x in set elems prices];
+ weights : seq of (nat1*nat1) = [ mk_(10*x, 20*x) | x in set elems prices];
  names : seq of (seq of char) = ["Bread","Milk","Honey","Ham","Touthpaste","Toilet paper","Beer",
  																"Pasta","Veal Beef","Ketchup"];
  
  public products : CashRegister`Products = {code |-> mk_CashRegister`ProductInfo(prices(code),
- 																					weigths(code),names(code)) | code in set {1,...,10}}; 
+ 																					weights(code),names(code)) | code in set {1,...,10}}; 
 \end{vdmpp}
 
 \subsubsection{Invariants and expressions}
