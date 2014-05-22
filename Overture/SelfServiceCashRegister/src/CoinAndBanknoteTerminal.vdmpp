@@ -26,7 +26,7 @@ operations
 		
 	public Pay: nat ==> bool
 		Pay(sum) ==
-			let enough = sum < balance
+			let enough = sum <= balance
 					 in
 				if enough then
 				(
@@ -41,6 +41,6 @@ operations
 					IO`print("Insufficient funds.\n");
 					return false;
 				)
-					
+		pre sum <> 0;			
 
 end CoinAndBanknoteTerminal

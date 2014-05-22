@@ -1,5 +1,5 @@
 %!TEX root = SSCR_project_main.tex
-\chapter{ModelDescription}
+\chapter{Model Description}
 
 \section{Class Diagram}
 An initial UML class diagram was made, and later refined during the implementation. 
@@ -18,7 +18,8 @@ The World and Environment classes are used to create stimuli to the system.
 The CashRegister class contains most of the functionality. It is also this class that contains a database of all products and corresponding barcodes. 
 It also contains a list of items in the 'shopping cart' and the accumulated price for the scanned products.
 
-\section{Code descriptions}
+\newpage
+\section{Class descriptions}
 
 \subsection{World and Environment}
 The World class is completely unnecessary, but is the entry for running the code.
@@ -40,9 +41,27 @@ instance variables
 end CR
 \end{vdmpp}
 
+\subsection{TouchScreen}
+The TouchScreen class represents the physical touch screen, but all GUI is abstracted away, and thus all operations are very simple, like the two examples show below.
+\begin{vdmpp}
+class TouchScreen
+
+operations
+ public StartPayment : () ==> ()
+ StartPayment() ==
+  CR`scanner.Enable(true);
+
+ public PayCash : () ==> ()
+ PayCash() ==
+  CR`cashRegister.Pay(CR`cabTerm);
+ \end{vdmpp}
+
+\subsection{BarcodeScanner}
+The BarcodeScanner class is similar to the TouchScreen class, but contains a single instance variable 'enable', to model that it could be turned on/off.
+
 
 \subsection{PaymentComponent}
-The PaymentComponent is a class with a single virtual Pay operation, meaning it is subclass responsibility. This means that all subclasses shall implement a corresponding pay function.
+The PaymentComponent is a class with a single virtual Pay operation, with subclass responsibility. This means that all subclasses shall implement a corresponding pay function.
 \begin{vdmpp}
 public Pay : nat ==> bool
 Pay(-) == is subclass responsibility;
@@ -77,7 +96,7 @@ operations
 \end{vdmpp}
 
 \subsection{CreditCardTerminal}
-The CreditCardTerminal is also a subclass of PaymentComponent. Both the 'internet' access and pin code is abstracted away, since it is not of major importance in this project.
+The CreditCardTerminal is also a subclass of PaymentComponent. Both internet access and pin code verification is abstracted away, since it is not of major importance in this project.
 
 \begin{vdmpp}
  public Pay : nat ==> bool
@@ -101,31 +120,11 @@ The CreditCardTerminal is also a subclass of PaymentComponent. Both the 'interne
  );	
 \end{vdmpp}
 
-
-\subsection{TouchScreen}
-The TouchScreen class represents the physical touch screen, but all GUI is abstracted away, and thus all operations are very simple, like the two examples show below.
-\begin{vdmpp}
-class TouchScreen
-
-operations
- public StartPayment : () ==> ()
- StartPayment() ==
-  CR`scanner.Enable(true);
-
- public PayCash : () ==> ()
- PayCash() ==
-  CR`cashRegister.Pay(CR`cabTerm);
- \end{vdmpp}
-
-\subsection{BarcodeScanner}
-The BarcodeScanner class is similar to the TouchScreen class, but contains a single instance variable 'enable', to model that it could be turned on/off.
-
-
+\newpage
 \subsection{CashRegister}
 The CashRegister class contains the main functionality in the system, and also the most interesting vdmpp syntax.
 
-\subsubsection{Types}
-\vspace{-0.5cm}
+\subsubsection{Types and records}
 The class contains three types definitions, including a map type and a record type:
 \begin{vdmpp}
 class CashRegister
@@ -139,8 +138,7 @@ types
 \end{vdmpp}
 
 \subsubsection{Values and comprehensions}
-\vspace{-0.5cm}
-Values are constant declarations, which are used here to populate the instance variable 'databaseProducts', which models a database of products. Both sequence and map comprehensions is used to generate these values.
+Values are constant declarations, which are used here to populate the instance variable 'databaseProducts', which models a database of products. Both sequence and map comprehensions are used to generate these values.
 \begin{vdmpp}
 values
  prices : seq of nat1 = [ price | price in set {1,...,100} & price mod 10 = 0];
@@ -153,7 +151,6 @@ values
 \end{vdmpp}
 
 \subsubsection{Invariants and expressions}
-\vspace{-0.5cm}
 A few invariants are added to some of the instance variables. For the databaseProducts variable, it is to ensure that the database is not empty, and that all products have a name.
 The invariant on the totalPrice is to ensure that the variable and the total price of all the products in the basket/shopping cart is equal.
 \begin{vdmpp}
@@ -168,9 +165,8 @@ instance variables
   inv totalPrice = TotalPrice(basketProducts); 
 \end{vdmpp}
 
-
-\subsubsection{Recursive function}
-\vspace{-0.5cm}
+\newpage
+\subsubsection{Recursive functions}
 In order to calculate the total price of all the products in the baskets, a recursive function is used. This is an easy way to iterate through a sequence and extract data from each element.
 \begin{vdmpp}
 functions
@@ -188,9 +184,23 @@ functions
   
 \end{vdmpp}
 
+\subsubsection{Preconditions and atomic statement}
+In the following the precondition is used on basketProducts. This ensures that the let expression does not throw a runtime error.
+The atomic statement section is used, to ensure that the invariant on totalPrice is not broken, when updating the basketProducts. 
+\begin{vdmpp}
+ public AddMultiple : nat1 ==> ()
+ AddMultiple(number) == 
+  let prod = basketProducts(len basketProducts) 
+   in  
+    atomic
+    (
+      basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
+      totalPrice := totalPrice + prod.Price*(number-1);
+    )
+  pre len basketProducts <> 0;
+\end{vdmpp}
 
-\subsubsection{Benefit of inheritance}
-\vspace{-0.5cm}
+\subsubsection{Benefits of inheritance}
 One of the benefits with the inheritance from PaymentComponent to CoinAndBanknoteTerminal and CreditCardTerminal is, that the Pay operation in the CashRegister does not have to differentiate between the two payment methods, as seen in the following:
 \begin{vdmpp}
  public Pay: (PaymentComponent) ==> ()
@@ -207,9 +217,9 @@ One of the benefits with the inheritance from PaymentComponent to CoinAndBanknot
 \end{vdmpp}
 
 
-\subsubsection{Various}
-\vspace{-0.5cm}
-
+\subsubsection{Various operations}
+The AddProduct operation contains various different vdmpp semantics, such as map and record application, sequence concatenation, etc.
+The PrintReceipt operation is recursive, and displays a list of purchased groceries, as specified in requirement R.5.
 \begin{vdmpp}
  public AddProduct: Barcode ==> ()
  AddProduct(bar) ==
@@ -227,12 +237,19 @@ One of the benefits with the inheritance from PaymentComponent to CoinAndBanknot
     IO`print("Barcode is not valid\n");
    )
   );
+
+ PrintReceipt: seq of ProductInfo ==> ()
+ PrintReceipt(prods) ==
+  if (len prods = 0) then
+   return
+  else
+   let prod = hd prods
+    in 
+    (
+     IO`print(prod.Name);
+     IO`print(" : ");
+     IO`print(prod.Price);
+     IO`print(" DKK\n");
+     PrintReceipt(tl prods);
+    )
 \end{vdmpp}
-
-
-
-
-
-Maps, sequences, comprehensions, records, invariants, expressions, preconditions, atomic, recursive function/operation, 
-
-Use of PaymentComponent.Pay..

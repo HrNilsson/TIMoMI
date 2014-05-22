@@ -54,16 +54,14 @@ operations
 
 	public AddMultiple : nat1 ==> ()
 	AddMultiple(number) == 
-		if(len basketProducts = 0) then 
-			return
-		else
-			let prod = basketProducts(len basketProducts) 
-				in		
-					atomic
-					(
-							basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
-							totalPrice := totalPrice + prod.Price*(number-1);
-					);
+		let prod = basketProducts(len basketProducts) 
+			in		
+				atomic
+				(
+						basketProducts := basketProducts ^ [prod|x in set {1,...,number-1}]
+						totalPrice := totalPrice + prod.Price*(number-1);
+				)
+		pre len basketProducts <> 0;
 	
 
 	public EmptyBasket: () ==> ()

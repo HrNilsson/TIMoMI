@@ -18,32 +18,28 @@ operations
 	public Run:() ==> ()
 	Run() ==
 	(
+	-- Standard run with cash:
 		screen.StartPayment();
 		
 		scanner.ScanBarcode(2);
-		screen.AddMultiple(3);
-		
+		screen.AddMultiple(3); -- Add three products with barcode 2
 		scanner.ScanBarcode(4);
 		scanner.ScanBarcode(7);
-		scanner.ScanBarcode(11);
+		scanner.ScanBarcode(11); --Invalid barcode
 		
-		cabTerm.PutInMoney(100);
+		cabTerm.PutInMoney(100); -- not enough
 		screen.PayCash();
 		cabTerm.PutInMoney(200);
 		screen.PayCash();
-		
+	
+	-- Cancel payment run:	
 		screen.StartPayment();
-		screen.AddMultiple(2);
 		scanner.ScanBarcode(4);
 		scanner.ScanBarcode(7);
-		screen.CancelPayment();
-		
+		screen.CancelPayment();	
+	
+	-- Standard run with credit card:
 		screen.StartPayment();
-		screen.PayCash();
-		
-		
-		screen.StartPayment();
-		
 		scanner.ScanBarcode(1);
 		scanner.ScanBarcode(5);
 		scanner.ScanBarcode(6);
@@ -52,7 +48,6 @@ operations
 		scanner.ScanBarcode(10);
 		
 		screen.PayCredit();
-	
 	)
 
 traces
@@ -95,8 +90,15 @@ AddingAndEmptyingBasket:
 				scanner.ScanBarcode(myBarcodes){1};
 				screen.AddMultiple(mult);
 				scanner.ScanBarcode(myBarcodes2){1,3};
-				screen.CancelPayment();
-				screen.AddMultiple(mult)
+				screen.CancelPayment()
 			);
+			
+preconditionFail:
+	let mult = 1
+		in
+		(
+			screen.StartPayment();
+			screen.AddMultiple(mult)
+		);
 
 end Environment

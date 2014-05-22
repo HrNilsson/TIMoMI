@@ -1,0 +1,14 @@
+	<Traces>
+	<Class Name="Environment">
+		<Trace Name="preconditionFail" TestCount="1" Filename="Environment.vdmpp" Line="96" Column="1" SUBSET="1.0" REDUCTION="NONE" SEED="999" >
+			<Test No="1">
+				screen.StartPayment(); screen.AddMultiple(1)
+			</Test>
+			<Result No="1" Verdict="FAILED" >
+				() ; Error 4071: Precondition failure: pre_AddMultiple in &apos;CashRegister&apos; at line 64:26
+			</Result>
+			<Status Verdict="FAILED" TestCount="1" SkippedCount="0" FaildCount="1" InconclusiveCount="0" >
+			</Status>
+		</Trace>
+	</Class>
+</Traces>

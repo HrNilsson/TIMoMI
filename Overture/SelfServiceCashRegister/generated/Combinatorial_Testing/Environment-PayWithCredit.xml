@@ -1,6 +1,6 @@
 	<Traces>
 	<Class Name="Environment">
-		<Trace Name="PayWithCredit" TestCount="300" Filename="Environment.vdmpp" Line="47" Column="1" SUBSET="1.0" REDUCTION="NONE" SEED="999" >
+		<Trace Name="PayWithCredit" TestCount="300" Filename="Environment.vdmpp" Line="55" Column="1" SUBSET="1.0" REDUCTION="NONE" SEED="999" >
 			<Test No="1">
 				screen.StartPayment(); scanner.ScanBarcode(1); scanner.ScanBarcode(1); screen.PayCredit()
 			</Test>

@@ -8,9 +8,6 @@ operations
 	public Pay : nat ==> bool
 	Pay(sum) ==
 	(
-		if(sum = 0) then
-			return true; -- Nothing to pay
-			
 	--Emulate wrong pin, not enough money etc.
 		if MATH`rand(100) < 10 then 
 		(
@@ -23,5 +20,6 @@ operations
 			IO`print(" DKK\n");
 			return true;
 		)
-	);
+	)
+	pre sum <> 0;
 end CreditCardTerminal

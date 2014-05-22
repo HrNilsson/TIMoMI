@@ -25,32 +25,28 @@ operations
  public Run:() ==> ()
  Run() ==
  (
+ -- Standard run with cash:
   screen.StartPayment();
   
   scanner.ScanBarcode(2);
-  screen.AddMultiple(3);
-  
+  screen.AddMultiple(3); -- Add three products with barcode 2
   scanner.ScanBarcode(4);
   scanner.ScanBarcode(7);
-  scanner.ScanBarcode(11);
+  scanner.ScanBarcode(11); --Invalid barcode
   
-  cabTerm.PutInMoney(100);
+  cabTerm.PutInMoney(100); -- not enough
   screen.PayCash();
   cabTerm.PutInMoney(200);
   screen.PayCash();
-  
+ 
+ -- Cancel payment run: 
   screen.StartPayment();
-  screen.AddMultiple(2);
   scanner.ScanBarcode(4);
   scanner.ScanBarcode(7);
-  screen.CancelPayment();
-  
+  screen.CancelPayment(); 
+ 
+ -- Standard run with credit card:
   screen.StartPayment();
-  screen.PayCash();
-  
-  
-  screen.StartPayment();
-  
   scanner.ScanBarcode(1);
   scanner.ScanBarcode(5);
   scanner.ScanBarcode(6);
@@ -59,7 +55,6 @@ operations
   scanner.ScanBarcode(10);
   
   screen.PayCredit();
- 
  )
 
 traces
@@ -102,9 +97,16 @@ AddingAndEmptyingBasket:
     (*@\vdmnotcovered{scanner}@*).ScanBarcode((*@\vdmnotcovered{myBarcodes}@*)){1};
     (*@\vdmnotcovered{screen}@*).AddMultiple((*@\vdmnotcovered{mult}@*));
     (*@\vdmnotcovered{scanner}@*).ScanBarcode((*@\vdmnotcovered{myBarcodes2}@*)){1,3};
-    (*@\vdmnotcovered{screen}@*).CancelPayment();
-    (*@\vdmnotcovered{screen}@*).AddMultiple((*@\vdmnotcovered{mult}@*))
+    (*@\vdmnotcovered{screen}@*).CancelPayment()
    );
+   
+preconditionFail:
+ let mult = (*@\vdmnotcovered{1}@*)
+  in
+  (
+   (*@\vdmnotcovered{screen}@*).StartPayment();
+   (*@\vdmnotcovered{screen}@*).AddMultiple((*@\vdmnotcovered{mult}@*))
+  );
 
 end Environment
 \end{vdmpp}
@@ -114,12 +116,12 @@ end Environment
 Function or operation & Coverage & Calls \\
 \hline
 \hline
-\hyperref[Environment:9]{Environment: 9} & 100.0\% & 4 \\
+\hyperref[Environment:9]{Environment: 9} & 100.0\% & 4820 \\
 \hline
-\hyperref[Run:18]{Run: 18} & 100.0\% & 2 \\
+\hyperref[Run:18]{Run: 18} & 100.0\% & 8 \\
 \hline
 \hline
-Environment.vdmpp & 52.1\% & 6 \\
+Environment.vdmpp & 48.9\% & 4828 \\
 \hline
 \end{longtable}
 
