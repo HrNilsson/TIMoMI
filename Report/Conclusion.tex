@@ -1,11 +1,14 @@
 %!TEX root = SSCR_project_main.tex
 \chapter{Conclusion}
-The created model cover all the required functionality, and tests the main scenarios in different combinations. The model contains a lot of the basic VDM++ constructs, which was also part of purpose.
+The created model successfully cover all the required functionality, and tests the main scenarios in different combinations. Using this model it is possible to test that the system will not fail due to design errors, when the system is implemented on actual hardware. 
+It abstracts away all unnecessary hardware and embedded software, which makes it easy to get a good overview of the system. The abstraction has shortened the implementation time and eased the testing.
 \newline
 
 \noindent
-Some parts of the model are more abstract than others, and might be modified with more details. 
+Some parts of the model, such as the database, are more abstract than others, and should be modeled with more details before deploying the system design to an embedded system.
+The model does not take concurrency and time into account. This might be necessary, depending on how each part is realized.
 \newline
 
 \noindent
-The model does not take concurrency into account. This might be necessary, depending on how each part is realized.
+A lot of the basic VDM++ constructs have been incorporated into the model, and thereby given a better understanding of the VDM++ specification language.
+

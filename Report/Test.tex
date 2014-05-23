@@ -2,7 +2,8 @@
 \chapter{Test}\label{chp:Test}
 
 \section{Proof Obligations}
-The automatic proof obligation generator in Overture was used, to check the system for missing preconditions.
+The automatic proof obligation generator in Overture was used, to check the system for missing or faulty preconditions.
+For instance when using mapping application the proof obligation generator will suggest a precondition that the index is in the set of the domain of the map.
 
 \section{Functional test}
 The Environment class models all inputs to the system. A sequence of different inputs is used to test the system functionality and thereby verify the functional requirements. The Run operation that describes this sequence is shown below. It contains three scenarios, which verifies all the requirements.
@@ -47,7 +48,7 @@ Using the built-in coverage and \LaTeX \hspace{2pt}functionality in Overture, it
 
 
 \section{Combinatorial Test}
-The Environment class also contains a \textbf{traces} section. This section is used for combinatorial testing. Four different tests have been made. Three of these test payment and canceling payment of different combinations of products. 
+The Environment class also contains a \textbf{traces} section. This section is used for combinatorial testing. Four different tests have been made. Three of these test payment and canceling payment with different combinations of products. 
 
 The last test deliberately creates a precondition failure, to show how such an error is display in Overture. 
 

@@ -11,3 +11,8 @@ From the customers point of view, such a system consist of a touch screen, a bar
 The purpose of the model is to create a simple abstract model of the system, which could be used to check the system design for errors.
 
 The purpose of the creation of this model is also, to get a better understanding of the basic VDM++ syntax and the different constructs, that the language makes available.
+
+\section{Abstraction}
+Besides the components visible to the customer, the system also contains a connection to a global database, in which all products information and barcodes are placed. This is for simplicity abstracted away, and instead a simple instance variable is used.
+
+Payment of groceries, using a credit card terminal, requires some internet access and pin code verification. This is also abstracted away, as to limit the size of the project.
